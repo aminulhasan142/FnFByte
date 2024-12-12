@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/img/logo.svg" type="image/x-icon" />
+    <!-- Main CSS -->
+    <link href="/src/style.css" rel="stylesheet" />
+    <!-- Google Icon  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-zinc-900 flex flex-col">
+    <!-- navbar section start -->
+    <section
+      class="flex h-20 backdrop-blur-3xl py-2 justify-between px-2 items-center fixed z-50 w-full"
+    >
+      <!-- logo fnfbyte -->
+      <a href="#">
+        <div class="flex items-center">
+          <img src="/img/logo.svg" alt="logo" />
+          <div
+            class="flex h-12 py-3 px-4 justify-center items-center rounded-[625rem] border border-border-primary text-white font-First font-bold not-italic text-xl"
+          >
+            FnF<span class="text-indigo-500">Byte</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- nav bar menu  -->
+      <div
+        class="h-12 p-1 items-center gap-[.125rem] border rounded-full border-border-primary bg-gradient-to-br from-nav-gradient-one/[.70] from-0% to-nav-gradient-two/[.70] to-100% backdrop-blur-[20px] shadow-3xl hidden sm:hidden md:hidden lg:flex"
+      >
+        <div class="flex justify-center items-center">
+          <a
+            href="#"
+            class="uppercase text-sm hover:text-white text-text-muted font-First font-bold pl-4 pr-4 py-[10px] hover:bg-border-primary rounded-l-full transition ease-out duration-500"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="uppercase text-sm hover:text-white text-text-muted font-First font-bold pl-4 pr-2 py-2 hover:bg-border-primary justify-center items-center flex self-center transition ease-out duration-500"
+          >
+            Services
+            <span
+              class="material-symbols-outlined flex items-center justify-center self-center h-6 w-6"
+            >
+              arrow_drop_down
+            </span>
+          </a>
+          <a
+            href="#"
+            class="uppercase text-sm hover:text-white text-text-muted font-First font-bold pl-4 pr-4 py-[10px] hover:bg-border-primary transition ease-out duration-500"
+            >PORTFOLIO</a
+          >
+          <a
+            href="#"
+            class="uppercase text-sm hover:text-white text-text-muted font-First font-bold pl-4 pr-2 py-2 hover:bg-border-primary rounded-r-full justify-center items-center flex self-center transition ease-out duration-500"
+          >
+            About
+            <span
+              class="material-symbols-outlined flex items-center justify-center self-center h-6 w-6"
+            >
+              arrow_drop_down
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- get quote and menu icon -->
+      <div class="flex items-center justify-center">
+        <!-- get quote -->
+        <a
+          href="#"
+          class="moving_arrow_button py-3 pl-[1.25rem] pr-3 bg-surface-brand hover:bg-surface-brand-hover transition ease-out duration-500 rounded-full text-white font-First font-bold gap-1 text-sm self-center justify-center items-center hidden sm:flex"
+        >
+          Get Quote
+          <div class="flex flex-col h-5 w-6 relative overflow-hidden">
+            <span
+              class="material-symbols-outlined relative hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+            >
+              arrow_outward
+            </span>
+            <span
+              class="material-symbols-outlined relative -left-6 hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+            >
+              arrow_outward
+            </span>
+          </div>
+        </a>
+        <!-- menu icon -->
+        <a
+          href="#"
+          class="flex justify-center items-center py-3 px-4 border border-zinc-800 rounded-full shadow-3xl backdrop-blur-[20px] bg-gradient-to-br from-nav-gradient-one/[.70] from-0% to-nav-gradient-two/[.70] to-100% hover:bg-border-primary text-text-muted hover:text-white transition ease-out duration-500"
+        >
+          <span class="material-symbols-outlined"> menu </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Hero section start -->
+    <section
+      class="flex max-w-[1888px] py-24 px-20 items-center gap-12 self-start w-full justify-between"
+    >
+      <!-- hero title content container  -->
+      <div class="flex flex-col items-start gap-5">
+        <!-- title text container-->
+        <div class="flex flex-col items-start gap-4 self-stretch">
+          <h1 class="title_heading">
+            Elevate Your <br hidden />
+            <div>
+              <span
+                class="bg-hero-light1 absolute left-[5rem] top-[9rem] h-20 w-20"
+              ></span>
+            </div>
+            Digital Presence
+          </h1>
+          <p class="sub_title_heading">
+            Innovative Design, Development, and Marketing
+          </p>
+        </div>
+        <!-- buttons of hero sections -->
+        <div
+          class="flex items-center gap-3 rounded-full backdrop:filter-[20px]"
+        >
+          <!-- explore us -->
+          <a
+            href="#"
+            class="flex h-12 py-3 px-6 content-center items-center gap-[.125rem] border-zinc-800 rounded-full shadow-3xl backdrop-blur-[20px] bg-gradient-to-br from-nav-gradient-one/[.70] from-0% to-nav-gradient-two/[.70] to-100% hover:bg-border-primary text-white text-sm font-bold font-First not-italic transition ease-out duration-500"
+            >Explore Us</a
+          >
+
+          <!-- contact us -->
+          <a
+            href="#"
+            class="moving_arrow_button py-3 pl-[1.25rem] pr-3 bg-surface-brand hover:bg-surface-brand-hover transition ease-out duration-500 rounded-full text-white font-First font-bold gap-1 text-sm self-center justify-center items-center hidden sm:flex"
+          >
+            Contact Us
+            <div class="flex flex-col h-5 w-6 relative overflow-hidden">
+              <span
+                class="material-symbols-outlined relative hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+              >
+                arrow_outward
+              </span>
+              <span
+                class="material-symbols-outlined relative -left-6 hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+              >
+                arrow_outward
+              </span>
+            </div>
+          </a>
+        </div>
+        <!-- hero background pattern design  -->
+        <div>
+          <span
+            class="bg-hero-pattern h-[35.28244rem] w-[60rem] absolute top-2 left-0 -z-20"
+          ></span>
+        </div>
+        <div>
+          <span
+            class="bg-hero-light h-[20rem] w-[21rem] absolute lg:left-[9rem] lg:top-[26rem] -z-20"
+          ></span>
+        </div>
+      </div>
+      <div
+        class="bg-hero-light h-[20rem] w-[21rem] absolute lg:left-[33rem] lg:top-[2rem] -z-20"
+      ></div>
+
+      <!-- hero swiper  -->
+      <div class="swiper heroSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slides h-96 rounded-full">
+            <img
+              src="/img/heroswiper1.png"
+              alt="hero image"
+              class="rounded-3xl w-full"
+            />
+          </div>
+          <div class="swiper-slides h-96 rounded-full">
+            <img
+              src="/img/heroswiper2.png"
+              alt="hero image"
+              class="rounded-[40px] w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .moving_arrow_button div span:nth-child(1)::before {
+    position: relative;
+    transition: 200ms;
+    transform: translate(1.5rem, -1.5rem);
+  }
+  .moving_arrow_button:hover div span:nth-child(1) {
+    position: relative;
+    transition: 200ms;
+    transform: translate(1.5rem, -1.5rem);
+  }
+  .moving_arrow_button div span:nth-child(2)::before {
+    position: relative;
+    transition: 200ms;
+    transform: translate(1.5rem, -1.5rem);
+  }
+  .moving_arrow_button:hover div span:nth-child(2) {
+    position: relative;
+    transition: 200ms;
+    transform: translate(1.5rem, -1.5rem);
+  }
+}
+
+.title_heading {
+  @apply text-white font-First font-bold text-[4rem] not-italic uppercase;
+}
+.sub_title_heading {
+  @apply text-white font-First font-normal text-[1rem] not-italic uppercase;
+}

@@ -1,0 +1,20 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="logo">
+<g clip-path="url(#clip0_6101_22244)">
+<path id="Rectangle 142" d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24Z" fill="url(#paint0_linear_6101_22244)"/>
+<g id="Group 1000003429">
+<path id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M22.8 14.3992C16.8353 14.3992 12 19.2345 12 25.1992V54.5992C12 56.256 13.3431 57.5992 15 57.5992C16.6569 57.5992 18 56.256 18 54.5992V25.1992C18 22.5482 20.149 20.3992 22.8 20.3992H33C34.6569 20.3992 36 19.056 36 17.3992C36 15.7423 34.6569 14.3992 33 14.3992H22.8Z" fill="white"/>
+<path id="Rectangle 139" d="M20.9375 31.0901C20.9375 29.4332 22.2806 28.0901 23.9375 28.0901H28.7375C30.3944 28.0901 31.7375 29.4332 31.7375 31.0901C31.7375 32.7469 30.3944 34.0901 28.7375 34.0901H23.9375C22.2806 34.0901 20.9375 32.7469 20.9375 31.0901Z" fill="white"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_6101_22244" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6B73FF"/>
+<stop offset="1" stop-color="#000DFF"/>
+</linearGradient>
+<clipPath id="clip0_6101_22244">
+<path d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24Z" fill="white"/>
+</clipPath>
+</defs>
+</svg>
