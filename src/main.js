@@ -1,6 +1,9 @@
+// Swiper JS Initialize ---------------------------------------------------------------------- Swiper JS Initialize --------------------------------------
 const progressCircle = document.querySelector(".autoplay-progress svg");
 const progressContent = document.querySelector(".autoplay-progress span");
 var swiper = new Swiper(".heroSwiper", {
+  direction: getDirection(),
+  grabCursor: true,
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
@@ -11,10 +14,6 @@ var swiper = new Swiper(".heroSwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
   on: {
     autoplayTimeLeft(s, time, progress) {
       progressCircle.style.setProperty("--progress", 1 - progress);
@@ -22,3 +21,11 @@ var swiper = new Swiper(".heroSwiper", {
     },
   },
 });
+function getDirection() {
+  var windowWidth = window.innerWidth;
+  var direction = window.innerWidth <= 768 ? "horizontal" : "vertical";
+
+  return direction;
+}
+
+//---------------------------------------------------------------- Swiper Intializer End----------------------------------------------

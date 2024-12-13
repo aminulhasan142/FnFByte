@@ -6,9 +6,13 @@ export default {
       fontFamily: {
         First: ["Poppins", "sans-serif"],
       },
+      flex: {
+        2: "1 0 0%",
+      },
       colors: {
         "navbar-color": "#18181b",
         "border-primary": "#27272A",
+        "text-primary": "#A1A1AA",
         "nav-gradient-one": "#18191c",
         "nav-gradient-two": "#161a24",
         "text-muted": "#A1A1AA",
@@ -17,6 +21,7 @@ export default {
       },
       boxShadow: {
         "3xl": "0 5px 24px 0px rgba(0, 0, 0, 0.03)",
+        "4xl": "0 5px 60px 10px rgba(11, 82, 235, 0.10)",
       },
       backgroundImage: {
         "hero-pattern": "url('/img/Line.svg')",

@@ -3,25 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- favicon -->
+    <!------------------------------------------- favicon ------------------------------------------->
     <link rel="shortcut icon" href="/img/logo.svg" type="image/x-icon" />
-    <!-- Main CSS -->
+    <!------------------------------------------------- Main CSS------------------------------------>
     <link href="/src/style.css" rel="stylesheet" />
 
-    <!-- Swiper CSS CDN -->
+    <!---------------------------------------- Swiper CSS CDN --------------------------------------->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
-    <!-- Google Icon  -->
+    <!-------------------------------------------- Google Icon  ---------------------------------------->
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
   </head>
   <body class="bg-zinc-900 flex flex-col">
-    <!-- navbar section start -->
+    <!---------------------------------------------------------------------------- navbar section start ----------------------------------------------------------->
     <section
       class="flex h-20 backdrop-blur-3xl py-2 justify-between px-2 items-center fixed z-50 w-full"
     >
@@ -108,156 +108,304 @@
       </div>
     </section>
 
-    <!-- Hero section start -->
+    <!---------------------------------------------------------------------------- Hero section start ------------------------------------------------------------->
     <section
-      class="flex flex-col px-3 lg:flex-row pt-24 sm:pt-24 md:pt-24 lg:pt-28 lg:pb-4 lg:px-14 md:px-8 xl:px-20 items-center gap-12 self-start w-full justify-between"
+      class="flex flex-col px-3 pt-24 sm:pt-24 md:pt-24 lg:pt-28 lg:pb-4 lg:px-14 md:px-8 xl:px-20"
     >
-      <!-- hero title content container  -->
-      <div class="flex flex-col items-start gap-5">
-        <!-- title text container-->
-        <div
-          class="flex flex-col text-center lg:text-start md:items-start gap-4 self-stretch !lg:text-5xl"
-        >
-          <h1 class="title_heading">
-            Elevate Your
-            <div class="w-0 h-0">
-              <span
-                class="bg-hero-light1 absolute left-[5rem] top-[9rem] h-20 w-20"
-              ></span>
-            </div>
-            Digital Presence
-          </h1>
-          <p class="sub_title_heading">
-            Innovative Design, Development, and Marketing
-          </p>
-        </div>
-        <!-- buttons of hero sections -->
-        <div
-          class="flex justify-center items-center w-full lg:justify-start md:content-start gap-3 rounded-full backdrop:filter-[20px]"
-        >
-          <!-- explore us -->
-          <a
-            href="#"
-            class="flex h-12 py-3 px-6 justify-center items-center gap-[.125rem] border-zinc-800 rounded-full shadow-3xl backdrop-blur-[20px] bg-gradient-to-br from-nav-gradient-one/[.70] from-0% to-nav-gradient-two/[.70] to-100% hover:bg-border-primary text-white text-sm font-bold font-First not-italic transition ease-out duration-500"
-            >Explore Us</a
+      <!-- title text and swiper container -->
+      <div
+        class="flex flex-col mb-4 lg:flex-row items-center gap-12 self-start w-full justify-between"
+      >
+        <!-- hero title content container  -->
+        <div class="flex flex-col items-start gap-5">
+          <!-- title text container-->
+          <div
+            class="flex flex-col text-center lg:text-start md:items-start gap-4 self-stretch !lg:text-5xl"
           >
+            <h1 class="title_heading">
+              Elevate Your
+              <div class="w-0 h-0">
+                <span
+                  class="bg-hero-light1 absolute left-[5rem] top-[9rem] h-20 w-20"
+                ></span>
+              </div>
+              Digital Presence
+            </h1>
+            <p class="sub_title_heading">
+              Innovative Design, Development, and Marketing
+            </p>
+          </div>
+          <!-- buttons of hero sections -->
+          <div
+            class="flex justify-center items-center w-full lg:justify-start md:content-start gap-3 rounded-full backdrop:filter-[20px]"
+          >
+            <!-- explore us -->
+            <a
+              href="#"
+              class="flex h-12 py-3 px-6 justify-center items-center gap-[.125rem] border-zinc-800 rounded-full shadow-3xl backdrop-blur-[20px] bg-gradient-to-br from-nav-gradient-one/[.70] from-0% to-nav-gradient-two/[.70] to-100% hover:bg-border-primary text-white text-sm font-bold font-First not-italic transition ease-out duration-500"
+              >Explore Us</a
+            >
 
-          <!-- contact us -->
-          <a
-            href="#"
-            class="moving_arrow_button flex flex-row py-3 pl-[1.25rem] pr-3 bg-surface-brand hover:bg-surface-brand-hover transition ease-out duration-500 rounded-full text-white font-First font-bold gap-1 text-sm self-center justify-center items-center sm:flex"
-          >
-            Contact Us
-            <div class="flex flex-col h-5 w-6 relative overflow-hidden">
-              <span
-                class="material-symbols-outlined relative hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
-              >
-                arrow_outward
-              </span>
-              <span
-                class="material-symbols-outlined relative -left-6 hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
-              >
-                arrow_outward
-              </span>
+            <!-- contact us -->
+            <a
+              href="#"
+              class="moving_arrow_button flex flex-row py-3 pl-[1.25rem] pr-3 bg-surface-brand hover:bg-surface-brand-hover transition ease-out duration-500 rounded-full text-white font-First font-bold gap-1 text-sm self-center justify-center items-center sm:flex"
+            >
+              Contact Us
+              <div class="flex flex-col h-5 w-6 relative overflow-hidden">
+                <span
+                  class="material-symbols-outlined relative hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+                >
+                  arrow_outward
+                </span>
+                <span
+                  class="material-symbols-outlined relative -left-6 hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+                >
+                  arrow_outward
+                </span>
+              </div>
+            </a>
+          </div>
+          <!-- hero background pattern design  -->
+          <div class="w-0 h-0">
+            <span
+              class="bg-hero-pattern h-[35.28244rem] w-[320px] md:w-[40rem] absolute top-2 left-0 -z-20"
+            ></span>
+          </div>
+          <div>
+            <span
+              class="bg-hero-light h-[20rem] w-[320px] absolute lg:left-[9rem] lg:top-[26rem] -z-20"
+            ></span>
+          </div>
+        </div>
+        <div
+          class="bg-hero-light h-[20rem] w-[320px] absolute lg:left-[33rem] lg:top-[2rem] -z-20"
+        ></div>
+
+        <!-- hero swiper  -->
+        <div
+          class="swiper heroSwiper w-[85%] lg:w-[45%] h-[340px] m-0 mb-auto !pb-12 lg:!pr-12 lg:!pb-0"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide h-96 rounded-full">
+              <img
+                src="/img/heroswiper1.png"
+                alt="hero image"
+                class="rounded-3xl w-full"
+              />
             </div>
-          </a>
-        </div>
-        <!-- hero background pattern design  -->
-        <div class="w-0 h-0">
-          <span
-            class="bg-hero-pattern h-[35.28244rem] w-[320px] md:w-[40rem] absolute top-2 left-0 -z-20"
-          ></span>
-        </div>
-        <div>
-          <span
-            class="bg-hero-light h-[20rem] w-[320px] absolute lg:left-[9rem] lg:top-[26rem] -z-20"
-          ></span>
+            <div class="swiper-slide h-96 rounded-full">
+              <img
+                src="/img/heroswiper2.png"
+                alt="hero image"
+                class="rounded-[40px] w-full"
+              />
+            </div>
+            <div class="swiper-slide h-96 rounded-full">
+              <img
+                src="/img/heroswiper1.png"
+                alt="hero image"
+                class="rounded-3xl w-full"
+              />
+            </div>
+            <div class="swiper-slide h-96 rounded-full">
+              <img
+                src="/img/heroswiper2.png"
+                alt="hero image"
+                class="rounded-[40px] w-full"
+              />
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div
+            class="swiper-pagination flex lg:flex-col justify-start items-start"
+          ></div>
+          <div class="autoplay-progress">
+            <svg viewBox="0 0 48 48">
+              <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <span></span>
+          </div>
         </div>
       </div>
-      <div
-        class="bg-hero-light h-[20rem] w-[320px] absolute lg:left-[33rem] lg:top-[2rem] -z-20"
-      ></div>
 
-      <!-- hero swiper  -->
+      <!-- hero bottom video section -->
+      <div class="h-full cursor-pointer">
+        <img src="/img/Intro Video.png" alt="video" class="w-full" />
+      </div>
+    </section>
+
+    <!---------------------------------------------------------------------------- Who we are section Start ------------------------------------------------------>
+    <section class="px-3 lg:px-[88px] pt-2 md:pt-4">
       <div
-        class="swiper heroSwiper w-[85%] lg:w-[45%] h-[340px] m-0 !ml-0 !mr-0 !pb-12 lg:!pr-12 lg:!pb-0"
+        class="who_we_are flex flex-col xl:flex-row max-w-[1744px] self-center w-full p-8 lg:p-20 items-start gap-12 self-centerc rounded-[2.5rem] border border-border-primary bg-navbar-color inset"
       >
-        <div class="swiper-wrapper">
-          <div class="swiper-slide h-96 rounded-full">
-            <img
-              src="/img/heroswiper1.png"
-              alt="hero image"
-              class="rounded-3xl w-full"
-            />
+        <!-- content 1 -->
+        <div class="flex flex-col items-start gap-3">
+          <!-- tag who we are -->
+          <div
+            class="flex py-[10px] px-4 justify-center items-center gap-1 rounded-full border border-border-primary text-text-muted font-First text-[14px] not-italic font-semibold leading-5"
+          >
+            <span class="bg-text-muted rounded-full h-[6px] w-[6px]"> </span>
+            Who We Are
           </div>
-          <div class="swiper-slide h-96 rounded-full">
-            <img
-              src="/img/heroswiper2.png"
-              alt="hero image"
-              class="rounded-[40px] w-full"
-            />
-          </div>
-          <div class="swiper-slide h-96 rounded-full">
-            <img
-              src="/img/heroswiper1.png"
-              alt="hero image"
-              class="rounded-3xl w-full"
-            />
-          </div>
-          <div class="swiper-slide h-96 rounded-full">
-            <img
-              src="/img/heroswiper2.png"
-              alt="hero image"
-              class="rounded-[40px] w-full"
-            />
+
+          <!-- text and buttons -->
+          <div class="flex flex-col items-start gap-8 self-stretch">
+            <p
+              class="font-First text[20px] leading-7 sm:text-[28px] not-italic font-bold sm:leading-10 bg-clip-text text-transparent bg-gradient-to-br from-[#43CBFF] from-0% to-[#9708CC] to-100%"
+            >
+              FnFByte is a forward-thinking technology company dedicated to
+              transforming ideas into impactful digital solutions. From UI/UX
+              design to full-stack development, we are your trusted partner in
+              the digital age.
+            </p>
+            <!-- who we are buttons -->
+            <div
+              class="flex flex-col sm:flex-col md:flex-row md:justify-start justify-center items-center w-full lg:justify-start md:content-start gap-3 rounded-full backdrop:filter-[20px]"
+            >
+              <!-- explore us -->
+              <a
+                href="#"
+                class="flex h-12 py-3 px-6 w-[90%] md:w-[152px] justify-center items-center gap-[.125rem] border-zinc-800 rounded-full shadow-3xl backdrop-blur-[20px] bg-gradient-to-br from-nav-gradient-one/[.70] from-0% to-nav-gradient-two/[.70] to-100% hover:bg-border-primary text-white text-sm font-bold font-First not-italic transition ease-out duration-500"
+                >More About Us</a
+              >
+
+              <!-- contact us -->
+              <a
+                href="#"
+                class="moving_arrow_button w-[90%] md:w-[150px] flex flex-row py-3 pl-[1.25rem] pr-3 bg-surface-brand hover:bg-surface-brand-hover transition ease-out duration-500 rounded-full text-white font-First font-bold gap-1 text-sm self-center justify-center items-center sm:flex"
+              >
+                What We Do
+                <div class="flex flex-col h-5 w-6 relative overflow-hidden">
+                  <span
+                    class="material-symbols-outlined relative hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+                  >
+                    arrow_outward
+                  </span>
+                  <span
+                    class="material-symbols-outlined relative -left-6 hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+                  >
+                    arrow_outward
+                  </span>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-        <!-- If we need pagination -->
+
+        <!-- content 2 -->
         <div
-          class="swiper-pagination flex lg:flex-col justify-start items-start"
-        ></div>
-        <div class="autoplay-progress">
-          <svg viewBox="0 0 48 48">
-            <circle cx="24" cy="24" r="20"></circle>
-          </svg>
-          <span></span>
+          class="flex min-w-[320] lg:min-w-[592px] min-h-[332px] p-8 flex-col justify-center items-start self-stretch rounded-2xl bg-slate-800 flex-2"
+        >
+          <!-- first row 1 for statistics -->
+          <div
+            class="flex flex-col justify-around min-h-[134px] items-center flex-2 self-stretch"
+          >
+            <!-- box 1 -->
+            <div
+              class="flex flex-col sm:flex-row w-full justify-around items-center flex-2"
+            >
+              <!-- box number text -->
+              <div class="flex flex-col w-[140px] items-start">
+                <h3
+                  class="text-text-primary font-First text-[32px] not-italic font-bold leading-[48px]"
+                >
+                  3+
+                </h3>
+                <p class="body_base_medium">Years of Experience</p>
+              </div>
+              <!-- divider between two box -->
+              <span
+                class="hidden sm:flex bg-gradient-to-b from-[#ffffff00] from-0% to-[#ffffff33] to-100% w-[1px] h-[139.5px]"
+              ></span>
+              <span
+                class="w-[80%] h-[1px] sm:hidden md:hidden my-4 bg-gradient-to-r from-[#ffffff00] from-0% via-[#ffffff33] via-50% to-[#ffffff00] to-100%"
+              ></span>
+              <!-- box number text -->
+              <div class="flex flex-col w-[140px] items-start">
+                <h3
+                  class="text-text-primary font-First text-[32px] not-italic font-bold leading-[48px]"
+                >
+                  200+
+                </h3>
+                <p class="body_base_medium">Projects</p>
+              </div>
+            </div>
+            <!-- divider number 2 -->
+            <span
+              class="w-[80%] h-[1px] my-4 sm:my-0 bg-gradient-to-r from-[#ffffff00] from-0% via-[#ffffff33] via-50% to-[#ffffff00] to-100%"
+            ></span>
+            <!-- box 2 -->
+            <div
+              class="flex flex-row w-full justify-around items-center flex-2"
+            >
+              <!-- 2nd col box 1 -->
+              <div
+                class="flex flex-col sm:flex-row justify-around items-center gap-2 flex-2"
+              >
+                <!-- happy clients -->
+                <div
+                  class="flex w-[140px] flex-col justify-center items-start gap-2"
+                >
+                  <!-- Avatar groups icons -->
+                  <div class="flex justify-end">
+                    <img src="/img/Avatar.svg" alt="Avatar" />
+                    <img
+                      src="/img/Avatar (1).svg"
+                      alt="Avatar"
+                      class="-ml-[10px]"
+                    />
+                    <span
+                      class="flex h-[48px] px-[16px] justify-center items-center gap-[0.976px] rounded-full border border-border-primary bg-surface-brand sub_title_sm text-center -ml-[10px]"
+                      >88+</span
+                    >
+                  </div>
+
+                  <!-- happy clients text -->
+                  <div class="body_base_medium">Happy Clients</div>
+                </div>
+
+                <!-- divider number 3 second box -->
+                <span
+                  class="hidden sm:flex bg-gradient-to-b from-[#ffffff00] from-0% to-[#ffffff33] to-100% w-[1px] h-[139.5px] rotate-180"
+                ></span>
+                <span
+                  class="w-[80%] h-[1px] sm:hidden md:hidden my-4 bg-gradient-to-r from-[#ffffff00] from-0% via-[#ffffff33] via-50% to-[#ffffff00] to-100%"
+                ></span>
+
+                <!-- Countries Served  -->
+                <div
+                  class="flex w-[140px] flex-col justify-center items-start gap-2"
+                >
+                  <!-- Flag groups icons -->
+                  <div class="flex justify-end">
+                    <img src="/img/Avatar (2).svg" alt="Flag" />
+                    <img
+                      src="/img/Avatar (3).svg"
+                      alt="Flag"
+                      class="-ml-[10px]"
+                    />
+                    <span
+                      class="flex h-[48px] px-[16px] justify-center items-center gap-[0.976px] rounded-full border border-border-primary bg-surface-brand sub_title_sm text-center -ml-[10px]"
+                      >6+</span
+                    >
+                  </div>
+
+                  <!-- Countries Served  text -->
+                  <div class="body_base_medium">Countries Served</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!-- Swiper JS -->
+
+    <!---------------------------------------------------------------------------- Swiper JS -------------------------------------------------------------------------->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script>
-      const progressCircle = document.querySelector(".autoplay-progress svg");
-      const progressContent = document.querySelector(".autoplay-progress span");
-      var swiper = new Swiper(".heroSwiper", {
-        direction: getDirection(),
-        grabCursor: true,
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        on: {
-          autoplayTimeLeft(s, time, progress) {
-            progressCircle.style.setProperty("--progress", 1 - progress);
-            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-          },
-        },
-      });
-      function getDirection() {
-        var windowWidth = window.innerWidth;
-        var direction = window.innerWidth <= 768 ? "horizontal" : "vertical";
-
-        return direction;
-      }
-    </script>
-    <!-- Main JS -->
-    <script src="/js/script.js"></script>
+    <!---------------------------------------------------------------------------- Main JS ----------------------------------------------------------------------------->
+    <script src="/src/main.js"></script>
   </body>
 </html>
