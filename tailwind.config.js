@@ -25,6 +25,7 @@ export default {
         "hero-light2": "url('/img/light2.svg')",
         "hero-swiper-img": "url('/img/heroswiper.png')",
         "hero-swiper-img1": "url('/img/heroswiper1.png')",
+        "hero-swiper-svg": "url('/img/chipbadge.svg')",
       },
     },
   },

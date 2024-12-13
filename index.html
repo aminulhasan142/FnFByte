@@ -7,6 +7,13 @@
     <link rel="shortcut icon" href="/img/logo.svg" type="image/x-icon" />
     <!-- Main CSS -->
     <link href="/src/style.css" rel="stylesheet" />
+
+    <!-- Swiper CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- Google Icon  -->
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
@@ -103,15 +110,17 @@
 
     <!-- Hero section start -->
     <section
-      class="flex max-w-[1888px] py-24 px-20 items-center gap-12 self-start w-full justify-between"
+      class="flex flex-col px-3 lg:flex-row pt-24 sm:pt-24 md:pt-24 lg:pt-28 lg:pb-4 lg:px-14 md:px-8 xl:px-20 items-center gap-12 self-start w-full justify-between"
     >
       <!-- hero title content container  -->
       <div class="flex flex-col items-start gap-5">
         <!-- title text container-->
-        <div class="flex flex-col items-start gap-4 self-stretch">
+        <div
+          class="flex flex-col text-center lg:text-start md:items-start gap-4 self-stretch !lg:text-5xl"
+        >
           <h1 class="title_heading">
-            Elevate Your <br hidden />
-            <div>
+            Elevate Your
+            <div class="w-0 h-0">
               <span
                 class="bg-hero-light1 absolute left-[5rem] top-[9rem] h-20 w-20"
               ></span>
@@ -124,19 +133,19 @@
         </div>
         <!-- buttons of hero sections -->
         <div
-          class="flex items-center gap-3 rounded-full backdrop:filter-[20px]"
+          class="flex justify-center items-center w-full lg:justify-start md:content-start gap-3 rounded-full backdrop:filter-[20px]"
         >
           <!-- explore us -->
           <a
             href="#"
-            class="flex h-12 py-3 px-6 content-center items-center gap-[.125rem] border-zinc-800 rounded-full shadow-3xl backdrop-blur-[20px] bg-gradient-to-br from-nav-gradient-one/[.70] from-0% to-nav-gradient-two/[.70] to-100% hover:bg-border-primary text-white text-sm font-bold font-First not-italic transition ease-out duration-500"
+            class="flex h-12 py-3 px-6 justify-center items-center gap-[.125rem] border-zinc-800 rounded-full shadow-3xl backdrop-blur-[20px] bg-gradient-to-br from-nav-gradient-one/[.70] from-0% to-nav-gradient-two/[.70] to-100% hover:bg-border-primary text-white text-sm font-bold font-First not-italic transition ease-out duration-500"
             >Explore Us</a
           >
 
           <!-- contact us -->
           <a
             href="#"
-            class="moving_arrow_button py-3 pl-[1.25rem] pr-3 bg-surface-brand hover:bg-surface-brand-hover transition ease-out duration-500 rounded-full text-white font-First font-bold gap-1 text-sm self-center justify-center items-center hidden sm:flex"
+            class="moving_arrow_button flex flex-row py-3 pl-[1.25rem] pr-3 bg-surface-brand hover:bg-surface-brand-hover transition ease-out duration-500 rounded-full text-white font-First font-bold gap-1 text-sm self-center justify-center items-center sm:flex"
           >
             Contact Us
             <div class="flex flex-col h-5 w-6 relative overflow-hidden">
@@ -154,32 +163,48 @@
           </a>
         </div>
         <!-- hero background pattern design  -->
-        <div>
+        <div class="w-0 h-0">
           <span
-            class="bg-hero-pattern h-[35.28244rem] w-[60rem] absolute top-2 left-0 -z-20"
+            class="bg-hero-pattern h-[35.28244rem] w-[320px] md:w-[40rem] absolute top-2 left-0 -z-20"
           ></span>
         </div>
         <div>
           <span
-            class="bg-hero-light h-[20rem] w-[21rem] absolute lg:left-[9rem] lg:top-[26rem] -z-20"
+            class="bg-hero-light h-[20rem] w-[320px] absolute lg:left-[9rem] lg:top-[26rem] -z-20"
           ></span>
         </div>
       </div>
       <div
-        class="bg-hero-light h-[20rem] w-[21rem] absolute lg:left-[33rem] lg:top-[2rem] -z-20"
+        class="bg-hero-light h-[20rem] w-[320px] absolute lg:left-[33rem] lg:top-[2rem] -z-20"
       ></div>
 
       <!-- hero swiper  -->
-      <div class="swiper heroSwiper">
+      <div
+        class="swiper heroSwiper w-[85%] lg:w-[45%] h-[340px] m-0 !ml-0 !mr-0 !pb-12 lg:!pr-12 lg:!pb-0"
+      >
         <div class="swiper-wrapper">
-          <div class="swiper-slides h-96 rounded-full">
+          <div class="swiper-slide h-96 rounded-full">
             <img
               src="/img/heroswiper1.png"
               alt="hero image"
               class="rounded-3xl w-full"
             />
           </div>
-          <div class="swiper-slides h-96 rounded-full">
+          <div class="swiper-slide h-96 rounded-full">
+            <img
+              src="/img/heroswiper2.png"
+              alt="hero image"
+              class="rounded-[40px] w-full"
+            />
+          </div>
+          <div class="swiper-slide h-96 rounded-full">
+            <img
+              src="/img/heroswiper1.png"
+              alt="hero image"
+              class="rounded-3xl w-full"
+            />
+          </div>
+          <div class="swiper-slide h-96 rounded-full">
             <img
               src="/img/heroswiper2.png"
               alt="hero image"
@@ -187,8 +212,52 @@
             />
           </div>
         </div>
+        <!-- If we need pagination -->
+        <div
+          class="swiper-pagination flex lg:flex-col justify-start items-start"
+        ></div>
+        <div class="autoplay-progress">
+          <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="20"></circle>
+          </svg>
+          <span></span>
+        </div>
       </div>
     </section>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const progressCircle = document.querySelector(".autoplay-progress svg");
+      const progressContent = document.querySelector(".autoplay-progress span");
+      var swiper = new Swiper(".heroSwiper", {
+        direction: getDirection(),
+        grabCursor: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        on: {
+          autoplayTimeLeft(s, time, progress) {
+            progressCircle.style.setProperty("--progress", 1 - progress);
+            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+          },
+        },
+      });
+      function getDirection() {
+        var windowWidth = window.innerWidth;
+        var direction = window.innerWidth <= 768 ? "horizontal" : "vertical";
+
+        return direction;
+      }
+    </script>
+    <!-- Main JS -->
     <script src="/js/script.js"></script>
   </body>
 </html>
