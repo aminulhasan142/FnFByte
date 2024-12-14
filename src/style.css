@@ -36,7 +36,7 @@
   @apply text-white font-First font-bold text-[1rem] not-italic leading-6;
 }
 .body_base_medium {
-  @apply text-text-primary font-First font-semibold text-[14px] not-italic leading-5;
+  @apply text-text-primary font-First font-semibold text-[9px] md:text-[14px] not-italic leading-5;
 }
 /* -----------------------------------------------------------------------title heading text end-----------------------------------------------------------------*/
 

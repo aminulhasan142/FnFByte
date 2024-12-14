@@ -22,6 +22,7 @@ export default {
       boxShadow: {
         "3xl": "0 5px 24px 0px rgba(0, 0, 0, 0.03)",
         "4xl": "0 5px 60px 10px rgba(11, 82, 235, 0.10)",
+        "5xl": "0 26px 26px 0px rgba(7, 110, 154, 0.10)",
       },
       backgroundImage: {
         "hero-pattern": "url('/img/Line.svg')",
