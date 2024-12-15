@@ -38,6 +38,9 @@
 .body_base_medium {
   @apply text-text-primary font-First font-semibold text-[9px] md:text-[14px] not-italic leading-5;
 }
+.body_xs {
+  @apply text-white font-First font-medium text-[12px] not-italic leading-[18px];
+}
 /* -----------------------------------------------------------------------title heading text end-----------------------------------------------------------------*/
 
 /* -----------------------------------------------------------------------swiper style start-----------------------------------------------------------------*/
@@ -104,6 +107,10 @@
 
 /* -----------------------------------------------------------------------swiper style end-----------------------------------------------------------------*/
 
-.who_we_are {
+.who_we_are_shadow {
   box-shadow: 0px 0px 60px 10px rgba(11, 82, 235, 0.1) inset;
+}
+
+.common_border {
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
