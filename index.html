@@ -620,7 +620,7 @@
       </div>
       <!-- bottom project section -->
       <div
-        class="who_we_are flex flex-col md:flex-row max-w-[1744px] self-center w-full p-8 lg:p-20 items-start gap-24 self-centerc rounded-[2.5rem] border border-border-primary bg-navbar-color inset"
+        class="who_we_are_shadow flex flex-col md:flex-row max-w-[1744px] self-center w-full p-8 lg:p-20 items-start gap-24 self-centerc rounded-[2.5rem] border border-border-primary bg-navbar-color inset"
       >
         <!-- content 1 -->
         <div class="flex flex-col items-start gap-3">
@@ -698,13 +698,13 @@
 
     <!---------------------------------------------------------------------------- Services section Start ------------------------------------------------------>
     <section
-      class="px-3 lg:px-[88px] md:pb-4 max-w-[1744px] flex flex-col items-start gap-2 self-center"
+      class="px-3 lg:px-[88px] pb-2 md:pb-4 max-w-[1744px] flex flex-col items-start gap-2 self-center"
     >
       <!-- service card container -->
       <div class="flex flex-col lg:flex-row items-center gap-2 self-stretch">
         <!-- card 1 -->
         <div
-          class="lg:min-h-[581px] xl:min-h-[390px] flex p-8 flex-col items-start gap-5 flex-2 rounded-[40px] bg-surface-primary who_we_are_shadow bg-service-svg bg-no-repeat"
+          class="lg:min-h-[581px] xl:min-h-[390px] relative flex p-8 flex-col items-start gap-5 flex-2 rounded-[40px] bg-surface-primary who_we_are_shadow bg-service-svg bg-no-repeat"
         >
           <!-- card head -->
           <div class="flex justify-between items-start self-stretch">
@@ -1082,10 +1082,72 @@
         </div>
       </div>
     </section>
+
+    <!---------------------------------------------------------------------------- Pricing Section Start ------------------------------------------------------>
+    <section
+      class="px-3 lg:px-[88px] md:pb-4 max-w-[1744px] flex flex-col items-start gap-2 self-center"
+    >
+      <!-- main container -->
+      <div
+        class="who_we_are_shadow flex flex-col md:flex-row self-center w-full p-8 lg:p-20 items-start gap-4 md:gap-24 self-centerc rounded-[2.5rem] border border-border-primary bg-navbar-color inset"
+      >
+        <!-- content  -->
+        <div class="flex flex-col items-start gap-3">
+          <!-- tag pricing section -->
+          <div
+            class="flex py-[10px] px-4 justify-center items-center gap-1 rounded-full border border-border-primary text-text-muted font-First text-[14px] not-italic font-semibold leading-5"
+          >
+            <span class="material-symbols-outlined text-text-muted text-[7px]">
+              paid
+            </span>
+            Pricing
+          </div>
+
+          <!-- text and buttons -->
+          <div class="flex flex-col items-start gap-1 self-stretch">
+            <h1 class="sub_title_xl">
+              Choose the plan that best fits your needs.
+            </h1>
+            <p class="body_base_medium !font-normal">
+              Our pricing plans are designed to deliver exceptional results.
+              Whether you're a startup, small business, or enterprise, we have a
+              plan to fit your needs. Choose the pricing plan that best fits
+              your project needs and budget.
+            </p>
+          </div>
+        </div>
+
+        <!-- content 2 -->
+        <div
+          class="flex flex-col self-end justify-center items-center md:items-end w-full lg:justify-start md:content-start gap-3 rounded-full backdrop:filter-[20px]"
+        >
+          <!-- All our projects -->
+          <a
+            href="#"
+            class="moving_arrow_button w-[100%] md:w-[145px] flex flex-row py-3 pl-[1.25rem] pr-3 bg-surface-brand hover:bg-surface-brand-hover transition ease-out duration-500 rounded-full text-white font-First font-bold gap-1 text-sm justify-center items-center sm:flex"
+          >
+            Contact Us
+            <div class="flex flex-col h-5 w-6 relative overflow-hidden">
+              <span
+                class="material-symbols-outlined relative hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+              >
+                arrow_outward
+              </span>
+              <span
+                class="material-symbols-outlined relative -left-6 hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+              >
+                arrow_outward
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!---------------------------------------------------------------------------- Swiper JS -------------------------------------------------------------------------->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!---------------------------------------------------------------------------- Main JS ----------------------------------------------------------------------------->
-    <script src="/src/main.js"></script>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
