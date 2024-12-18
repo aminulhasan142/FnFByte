@@ -39,7 +39,7 @@
   @apply text-white font-First font-bold text-[24px] not-italic leading-9;
 }
 .body_base_medium {
-  @apply text-text-primary font-First font-semibold text-[9px] md:text-[14px] not-italic leading-5;
+  @apply text-text-primary font-First font-semibold text-[14px] not-italic leading-5;
 }
 .body_xs {
   @apply text-white font-First font-medium text-[12px] not-italic leading-[18px];

@@ -12,6 +12,8 @@ export default {
       colors: {
         "navbar-color": "#18181b",
         "border-primary": "#27272A",
+        "border-brand": "#4F46E5",
+        "border-color": "#ffffff4d",
         "text-primary": "#A1A1AA",
         "text-secondary": "#E4E4E7",
         "nav-gradient-one": "#18191c",
