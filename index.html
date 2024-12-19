@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!------------------------------------------- favicon ------------------------------------------->
     <link rel="shortcut icon" href="/img/logo.svg" type="image/x-icon" />
-    <!------------------------------------------------- Main CSS------------------------------------>
-    <link href="/src/style.css" rel="stylesheet" />
 
     <!---------------------------------------- Swiper CSS CDN --------------------------------------->
     <link
@@ -19,6 +17,17 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
+    <!-------------------------------------------- Font Awesome  ---------------------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!------------------------------------------------- Main CSS------------------------------------>
+    <link href="/src/style.css" rel="stylesheet" />
   </head>
   <body class="bg-zinc-900 flex flex-col">
     <!---------------------------------------------------------------------------- navbar section start ----------------------------------------------------------->
@@ -184,7 +193,7 @@
 
         <!-- hero swiper  -->
         <div
-          class="swiper heroSwiper w-[85%] max-w-3xl lg:w-[45%] h-[340px] mb-auto !pb-12 lg:!pr-12 lg:!pb-0"
+          class="swiper swiper-container slider1 w-[85%] max-w-3xl lg:w-[45%] h-[340px] mb-auto !pb-12 lg:!pr-12 lg:!pb-0"
         >
           <div class="swiper-wrapper">
             <div class="swiper-slide h-96 rounded-full">
@@ -1531,6 +1540,348 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------------------------------------------------- Testimonial Section Start ------------------------------------------------------>
+    <section
+      class="px-3 lg:px-[88px] pb-3 md:pb-4 flex max-w-[1744px] flex-col items-start gap-1 self-center"
+    >
+      <div
+        class="relative flex py-[140px] px-[104px] flex-col justify-center items-center gap-6 self-stretch rounded-[40px] border border-border-primary bg-surface-background who_we_are_shadow"
+      >
+        <!-- Quote icon vector -->
+        <div
+          class="flex py-2 items-start gap-[10px] absolute left-[60px] top-[56px]"
+        >
+          <img src="/img/Vector.svg" alt="vector" class="w-[57px] h-[110px]" />
+          <img src="/img/Vector.svg" alt="vector" class="w-[57px] h-[110px]" />
+        </div>
+
+        <!-- swiper js for Testimonial -->
+        <div
+          class="swiper swiper-container slider2 bg-surface-background max-w-[1080px] pb-16"
+        >
+          <div class="swiper-wrapper bg-surface-background">
+            <!-- slide 1 -->
+            <div class="swiper-slide bg-surface-background">
+              <div
+                class="flex items-center gap-6 self-stretch shadow-6xl bg-surface-background"
+              >
+                <!-- avatar -->
+                <img
+                  src="/img/avatar1.png"
+                  alt="Picture"
+                  class="flex w-[372px] h-[400px] items-center rounded-[32px]"
+                />
+                <!-- client review -->
+                <div
+                  class="flex p-12 flex-col justify-center items-start gap-6 flex-2 self-stretch rounded-[32px] bg-surface-primary"
+                >
+                  <!-- review tags -->
+                  <div
+                    class="flex py-[10px] px-4 justify-center items-center gap-1 rounded-full border border-border-dark text-text-muted font-First text-[14px] not-italic font-semibold leading-5"
+                  >
+                    <span
+                      class="material-symbols-outlined text-text-muted text-[7px]"
+                    >
+                      reviews
+                    </span>
+                    Client’s Review
+                  </div>
+                  <!-- review description text -->
+                  <p
+                    class="text-start line-clamp-4 font-First text[20px] leading-7 sm:text-[28px] not-italic font-bold sm:leading-10 bg-clip-text text-transparent bg-gradient-to-br from-[#43CBFF] from-0% to-[#9708CC] to-100%"
+                  >
+                    "FnFByte truly transformed our digital presence. Their team
+                    was not only creative but also incredibly knowledgeable in
+                    the latest tech trends. From the initial brainstorming
+                    sessions to the final launch, their attention to detail and
+                    dedication to delivering a user-friendly, visually striking
+                    website exceeded all our expectations. We’ve seen a
+                    significant increase in traffic and engagement, and the
+                    seamless UX they designed has contributed to a smoother
+                    customer experience. Highly recommend!"
+                  </p>
+
+                  <!-- clients profile  -->
+                  <div class="flex justify-between items-center self-stretch">
+                    <!-- clients info -->
+                    <div
+                      class="flex max-w-[215px] flex-col items-start gap-[2px] self-stretch"
+                    >
+                      <h2 class="sub_title_sm">John Doe</h2>
+                      <p class="body_xs !text-text-primary">
+                        CEO of TechNova Solutions
+                      </p>
+                    </div>
+
+                    <!-- button -->
+                    <a
+                      href="#"
+                      class="moving_arrow_button w-[100%] md:w-[190px] flex flex-row py-3 pl-[1.25rem] pr-3 bg-surface-brand hover:bg-surface-brand-hover transition ease-out duration-500 rounded-full text-white font-First font-bold gap-1 text-sm justify-center items-center sm:flex"
+                    >
+                      Read the full story
+                      <div
+                        class="flex flex-col h-5 w-6 relative overflow-hidden"
+                      >
+                        <span
+                          class="material-symbols-outlined relative hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+                        >
+                          arrow_outward
+                        </span>
+                        <span
+                          class="material-symbols-outlined relative -left-6 hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+                        >
+                          arrow_outward
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide 2 -->
+            <div class="swiper-slide bg-surface-background">
+              <div
+                class="flex items-center gap-6 self-stretch shadow-6xl bg-surface-background"
+              >
+                <!-- avatar -->
+                <img
+                  src="/img/avatar2.png"
+                  alt="Picture"
+                  class="flex w-[372px] h-[400px] items-center rounded-[32px]"
+                />
+                <!-- client review -->
+                <div
+                  class="flex p-12 flex-col justify-center items-start gap-6 flex-2 self-stretch rounded-[32px] bg-surface-primary"
+                >
+                  <!-- review tags -->
+                  <div
+                    class="flex py-[10px] px-4 justify-center items-center gap-1 rounded-full border border-border-dark text-text-muted font-First text-[14px] not-italic font-semibold leading-5"
+                  >
+                    <span
+                      class="material-symbols-outlined text-text-muted text-[7px]"
+                    >
+                      reviews
+                    </span>
+                    Client’s Review
+                  </div>
+                  <!-- review description text -->
+                  <p
+                    class="text-start line-clamp-4 font-First text[20px] leading-7 sm:text-[28px] not-italic font-bold sm:leading-10 bg-clip-text text-transparent bg-gradient-to-br from-[#43CBFF] from-0% to-[#9708CC] to-100%"
+                  >
+                    "FnFByte truly transformed our digital presence. Their team
+                    was not only creative but also incredibly knowledgeable in
+                    the latest tech trends. From the initial brainstorming
+                    sessions to the final launch, their attention to detail and
+                    dedication to delivering a user-friendly, visually striking
+                    website exceeded all our expectations. We’ve seen a
+                    significant increase in traffic and engagement, and the
+                    seamless UX they designed has contributed to a smoother
+                    customer experience. Highly recommend!"
+                  </p>
+
+                  <!-- clients profile  -->
+                  <div class="flex justify-between items-center self-stretch">
+                    <!-- clients info -->
+                    <div
+                      class="flex max-w-[215px] flex-col items-start gap-[2px] self-stretch"
+                    >
+                      <h2 class="sub_title_sm">John Doe</h2>
+                      <p class="body_xs !text-text-primary">
+                        CEO of TechNova Solutions
+                      </p>
+                    </div>
+
+                    <!-- button -->
+                    <a
+                      href="#"
+                      class="moving_arrow_button w-[100%] md:w-[190px] flex flex-row py-3 pl-[1.25rem] pr-3 bg-surface-brand hover:bg-surface-brand-hover transition ease-out duration-500 rounded-full text-white font-First font-bold gap-1 text-sm justify-center items-center sm:flex"
+                    >
+                      Read the full story
+                      <div
+                        class="flex flex-col h-5 w-6 relative overflow-hidden"
+                      >
+                        <span
+                          class="material-symbols-outlined relative hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+                        >
+                          arrow_outward
+                        </span>
+                        <span
+                          class="material-symbols-outlined relative -left-6 hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+                        >
+                          arrow_outward
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- slide 3 -->
+            <div class="swiper-slide bg-surface-background">
+              <div
+                class="flex items-center gap-6 self-stretch shadow-6xl bg-surface-background"
+              >
+                <!-- avatar -->
+                <img
+                  src="/img/avatar1.png"
+                  alt="Picture"
+                  class="flex w-[372px] h-[400px] items-center rounded-[32px]"
+                />
+                <!-- client review -->
+                <div
+                  class="flex p-12 flex-col justify-center items-start gap-6 flex-2 self-stretch rounded-[32px] bg-surface-primary"
+                >
+                  <!-- review tags -->
+                  <div
+                    class="flex py-[10px] px-4 justify-center items-center gap-1 rounded-full border border-border-dark text-text-muted font-First text-[14px] not-italic font-semibold leading-5"
+                  >
+                    <span
+                      class="material-symbols-outlined text-text-muted text-[7px]"
+                    >
+                      reviews
+                    </span>
+                    Client’s Review
+                  </div>
+                  <!-- review description text -->
+                  <p
+                    class="text-start line-clamp-4 font-First text[20px] leading-7 sm:text-[28px] not-italic font-bold sm:leading-10 bg-clip-text text-transparent bg-gradient-to-br from-[#43CBFF] from-0% to-[#9708CC] to-100%"
+                  >
+                    "FnFByte truly transformed our digital presence. Their team
+                    was not only creative but also incredibly knowledgeable in
+                    the latest tech trends. From the initial brainstorming
+                    sessions to the final launch, their attention to detail and
+                    dedication to delivering a user-friendly, visually striking
+                    website exceeded all our expectations. We’ve seen a
+                    significant increase in traffic and engagement, and the
+                    seamless UX they designed has contributed to a smoother
+                    customer experience. Highly recommend!"
+                  </p>
+
+                  <!-- clients profile  -->
+                  <div class="flex justify-between items-center self-stretch">
+                    <!-- clients info -->
+                    <div
+                      class="flex max-w-[215px] flex-col items-start gap-[2px] self-stretch"
+                    >
+                      <h2 class="sub_title_sm">John Doe</h2>
+                      <p class="body_xs !text-text-primary">
+                        CEO of TechNova Solutions
+                      </p>
+                    </div>
+
+                    <!-- button -->
+                    <a
+                      href="#"
+                      class="moving_arrow_button w-[100%] md:w-[190px] flex flex-row py-3 pl-[1.25rem] pr-3 bg-surface-brand hover:bg-surface-brand-hover transition ease-out duration-500 rounded-full text-white font-First font-bold gap-1 text-sm justify-center items-center sm:flex"
+                    >
+                      Read the full story
+                      <div
+                        class="flex flex-col h-5 w-6 relative overflow-hidden"
+                      >
+                        <span
+                          class="material-symbols-outlined relative hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+                        >
+                          arrow_outward
+                        </span>
+                        <span
+                          class="material-symbols-outlined relative -left-6 hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+                        >
+                          arrow_outward
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- slide 4 -->
+            <div class="swiper-slide bg-surface-background">
+              <div
+                class="flex items-center gap-6 self-stretch shadow-6xl bg-surface-background"
+              >
+                <!-- avatar -->
+                <img
+                  src="/img/avatar2.png"
+                  alt="Picture"
+                  class="flex w-[372px] h-[400px] items-center rounded-[32px]"
+                />
+                <!-- client review -->
+                <div
+                  class="flex p-12 flex-col justify-center items-start gap-6 flex-2 self-stretch rounded-[32px] bg-surface-primary"
+                >
+                  <!-- review tags -->
+                  <div
+                    class="flex py-[10px] px-4 justify-center items-center gap-1 rounded-full border border-border-dark text-text-muted font-First text-[14px] not-italic font-semibold leading-5"
+                  >
+                    <span
+                      class="material-symbols-outlined text-text-muted text-[7px]"
+                    >
+                      reviews
+                    </span>
+                    Client’s Review
+                  </div>
+                  <!-- review description text -->
+                  <p
+                    class="text-start line-clamp-4 font-First text[20px] leading-7 sm:text-[28px] not-italic font-bold sm:leading-10 bg-clip-text text-transparent bg-gradient-to-br from-[#43CBFF] from-0% to-[#9708CC] to-100%"
+                  >
+                    "FnFByte truly transformed our digital presence. Their team
+                    was not only creative but also incredibly knowledgeable in
+                    the latest tech trends. From the initial brainstorming
+                    sessions to the final launch, their attention to detail and
+                    dedication to delivering a user-friendly, visually striking
+                    website exceeded all our expectations. We’ve seen a
+                    significant increase in traffic and engagement, and the
+                    seamless UX they designed has contributed to a smoother
+                    customer experience. Highly recommend!"
+                  </p>
+
+                  <!-- clients profile  -->
+                  <div class="flex justify-between items-center self-stretch">
+                    <!-- clients info -->
+                    <div
+                      class="flex max-w-[215px] flex-col items-start gap-[2px] self-stretch"
+                    >
+                      <h2 class="sub_title_sm">John Doe</h2>
+                      <p class="body_xs !text-text-primary">
+                        CEO of TechNova Solutions
+                      </p>
+                    </div>
+
+                    <!-- button -->
+                    <a
+                      href="#"
+                      class="moving_arrow_button w-[100%] md:w-[190px] flex flex-row py-3 pl-[1.25rem] pr-3 bg-surface-brand hover:bg-surface-brand-hover transition ease-out duration-500 rounded-full text-white font-First font-bold gap-1 text-sm justify-center items-center sm:flex"
+                    >
+                      Read the full story
+                      <div
+                        class="flex flex-col h-5 w-6 relative overflow-hidden"
+                      >
+                        <span
+                          class="material-symbols-outlined relative hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+                        >
+                          arrow_outward
+                        </span>
+                        <span
+                          class="material-symbols-outlined relative -left-6 hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+                        >
+                          arrow_outward
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination flex"></div>
         </div>
       </div>
     </section>
