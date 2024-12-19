@@ -1549,7 +1549,7 @@
       class="px-3 lg:px-[88px] pb-3 md:pb-4 flex max-w-[1744px] flex-col items-start gap-1 self-center"
     >
       <div
-        class="relative flex py-[140px] px-[104px] flex-col justify-center items-center gap-6 self-stretch rounded-[40px] border border-border-primary bg-surface-background who_we_are_shadow"
+        class="relative w-full flex p-8 lg:py-[140px] lg:px-[104px] flex-col justify-center items-center gap-6 self-stretch rounded-[40px] border border-border-primary bg-surface-background who_we_are_shadow"
       >
         <!-- Quote icon vector -->
         <div
@@ -1561,13 +1561,13 @@
 
         <!-- swiper js for Testimonial -->
         <div
-          class="swiper swiper-container slider2 bg-surface-background max-w-[1080px] pb-16"
+          class="swiper swiper-container slider2 bg-surface-background w-[80%] pb-16"
         >
           <div class="swiper-wrapper bg-surface-background">
             <!-- slide 1 -->
             <div class="swiper-slide bg-surface-background">
               <div
-                class="flex items-center gap-6 self-stretch shadow-6xl bg-surface-background"
+                class="flex flex-col lg:flex-row items-center gap-6 self-stretch shadow-6xl bg-surface-background"
               >
                 <!-- avatar -->
                 <img
@@ -1645,7 +1645,7 @@
             <!-- slide 2 -->
             <div class="swiper-slide bg-surface-background">
               <div
-                class="flex items-center gap-6 self-stretch shadow-6xl bg-surface-background"
+                class="flex flex-col lg:flex-row items-center gap-6 self-stretch shadow-6xl bg-surface-background"
               >
                 <!-- avatar -->
                 <img
@@ -1724,7 +1724,7 @@
             <!-- slide 3 -->
             <div class="swiper-slide bg-surface-background">
               <div
-                class="flex items-center gap-6 self-stretch shadow-6xl bg-surface-background"
+                class="flex flex-col lg:flex-row items-center gap-6 self-stretch shadow-6xl bg-surface-background"
               >
                 <!-- avatar -->
                 <img
@@ -1803,7 +1803,7 @@
             <!-- slide 4 -->
             <div class="swiper-slide bg-surface-background">
               <div
-                class="flex items-center gap-6 self-stretch shadow-6xl bg-surface-background"
+                class="flex flex-col lg:flex-row items-center gap-6 self-stretch shadow-6xl bg-surface-background"
               >
                 <!-- avatar -->
                 <img
@@ -1879,9 +1879,21 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination flex"></div>
+          <div class="swiper-button-next">
+            <span
+              class="material-symbols-outlined flex p-3 items-center rounded-full bg-surface-brand shadow-6xl text-white text-[24px]"
+            >
+              chevron_right
+            </span>
+          </div>
+          <div class="swiper-button-prev">
+            <span
+              class="material-symbols-outlined flex p-3 items-center rounded-full bg-surface-brand shadow-6xl text-white text-[24px]"
+            >
+              chevron_left
+            </span>
+          </div>
+          <div class="swiper-pagination flex !bottom-[30px]"></div>
         </div>
       </div>
     </section>

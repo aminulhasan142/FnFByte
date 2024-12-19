@@ -99,7 +99,7 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: 15px !important;
+  bottom: 30px !important;
 }
 
 /* testinominal swiper */
@@ -117,6 +117,19 @@
   height: 10px !important;
 
   border-radius: 1000px !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+.swiper-button-next,
+.swiper-button-prev {
+  margin: 0 !important;
+  top: 90% !important;
+}
+.swiper-button-prev {
+  left: calc(92%);
 }
 
 /* -----------------------------------------------------------------------swiper style end-----------------------------------------------------------------*/
