@@ -30,23 +30,23 @@ function getDirection() {
 
 //---------------------------------------------------------------- Swiper Intializer End----------------------------------------------
 
-// swiper for textimonial
+// ------------------------------------------------------------------- accordion js start ----------------------------------------------
+const accordions = document.querySelectorAll(".accordion-item");
 
-var slider2 = new Swiper(".slider2", {
-  spaceBetween: 30,
-  loop: true,
-  grabCursor: true,
-  centeredSlides: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+accordions.forEach((accordion) => {
+  accordion.addEventListener("click", () => {
+    const toggles = accordion.querySelectorAll(".toggle");
+    const icon = document.querySelector(".accordion-icon");
+
+    // Loop through each toggle and apply classList.toggle
+    toggles.forEach((toggle) => {
+      toggle.classList.toggle("hidden");
+    });
+
+    if (icon.textContent === "keyboard_arrow_down") {
+      icon.textContent = "keyboard_arrow_up";
+    } else {
+      icon.textContent = "keyboard_arrow_down";
+    }
+  });
 });

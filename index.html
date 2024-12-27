@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +10,11 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!---------------------------------------- Flowbite CSS CDN --------------------------------------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
     />
 
     <!-------------------------------------------- Google Icon  ---------------------------------------->
@@ -52,13 +57,13 @@
       >
         <div class="flex justify-center items-center">
           <a
-            href="#"
-            class="uppercase text-sm hover:text-white text-text-muted font-First font-bold pl-4 pr-4 py-[10px] hover:bg-border-primary rounded-l-full transition ease-out duration-500"
+            href="#hero"
+            class="capitalize text-sm hover:text-white text-text-muted font-First font-bold pl-4 pr-4 py-[10px] hover:bg-border-primary rounded-l-full transition ease-out duration-500"
             >Home</a
           >
           <a
-            href="#"
-            class="uppercase text-sm hover:text-white text-text-muted font-First font-bold pl-4 pr-2 py-2 hover:bg-border-primary justify-center items-center flex self-center transition ease-out duration-500"
+            href="#service"
+            class="capitalize text-sm hover:text-white text-text-muted font-First font-bold pl-4 pr-2 py-2 hover:bg-border-primary justify-center items-center flex self-center transition ease-out duration-500"
           >
             Services
             <span
@@ -68,13 +73,13 @@
             </span>
           </a>
           <a
-            href="#"
-            class="uppercase text-sm hover:text-white text-text-muted font-First font-bold pl-4 pr-4 py-[10px] hover:bg-border-primary transition ease-out duration-500"
+            href="#project"
+            class="capitalize text-sm hover:text-white text-text-muted font-First font-bold pl-4 pr-4 py-[10px] hover:bg-border-primary transition ease-out duration-500"
             >PORTFOLIO</a
           >
           <a
-            href="#"
-            class="uppercase text-sm hover:text-white text-text-muted font-First font-bold pl-4 pr-2 py-2 hover:bg-border-primary rounded-r-full justify-center items-center flex self-center transition ease-out duration-500"
+            href="#whoweare"
+            class="capitalize text-sm hover:text-white text-text-muted font-First font-bold pl-4 pr-2 py-2 hover:bg-border-primary rounded-r-full justify-center items-center flex self-center transition ease-out duration-500"
           >
             About
             <span
@@ -90,7 +95,7 @@
       <div class="flex items-center justify-center">
         <!-- get quote -->
         <a
-          href="#"
+          href="#additional"
           class="moving_arrow_button py-3 pl-[1.25rem] pr-3 bg-surface-brand hover:bg-surface-brand-hover transition ease-out duration-500 rounded-full text-white font-First font-bold gap-1 text-sm self-center justify-center items-center hidden sm:flex"
         >
           Get Quote
@@ -119,11 +124,12 @@
 
     <!---------------------------------------------------------------------------- Hero section start ------------------------------------------------------------->
     <section
-      class="flex flex-col px-3 pt-24 sm:pt-24 md:pt-24 lg:pt-28 lg:pb-4 lg:px-14 md:px-8 xl:px-20"
+      id="hero"
+      class="flex flex-col relative self-center mt-40 px-3 lg:px-6 xl:px-[88px] pb-4 md:pt-4 md:pb-4 max-w-[1744px]"
     >
       <!-- title text and swiper container -->
       <div
-        class="flex flex-col mb-4 lg:flex-row items-center gap-12 self-start w-full justify-between"
+        class="flex flex-col mb-4 lg:flex-row items-center gap-4 md:gap-12 self-start w-full justify-between"
       >
         <!-- hero title content container  -->
         <div class="flex flex-col items-start gap-5">
@@ -193,7 +199,7 @@
 
         <!-- hero swiper  -->
         <div
-          class="swiper swiper-container slider1 w-[85%] max-w-3xl lg:w-[45%] h-[340px] mb-auto !pb-12 lg:!pr-12 lg:!pb-0"
+          class="swiper swiper-container slider1 w-[85%] max-w-3xl lg:w-[45%] h-[275px] mb-auto !pb-12 lg:!pr-12 lg:!pb-0"
         >
           <div class="swiper-wrapper">
             <div class="swiper-slide h-96 rounded-full">
@@ -246,7 +252,8 @@
 
     <!---------------------------------------------------------------------------- Who we are section Start ------------------------------------------------------>
     <section
-      class="px-3 lg:px-[88px] pt-2 pb-4 md:pt-4 md:pb-4 flex self-center max-w-[1744px]"
+      id="whoweare"
+      class="px-3 lg:px-6 xl:px-[88px] pt-2 pb-4 md:pt-4 md:pb-4 flex self-center max-w-[1744px]"
     >
       <div
         class="who_we_are_shadow flex flex-col xl:flex-row self-center w-full p-8 lg:p-20 items-start gap-12 self-centerc rounded-[2.5rem] border border-border-primary bg-navbar-color inset"
@@ -416,7 +423,8 @@
     <!---------------------------------------------------------------------------- Project Sectoin Start ------------------------------------------------------>
 
     <section
-      class="px-3 lg:px-[88px] pb-3 md:pb-4 flex max-w-[1744px] flex-col items-start gap-1 self-center"
+      id="project"
+      class="px-3 lg:px-6 xl:px-[88px] pt-2 pb-4 md:pt-4 md:pb-4 flex max-w-[1744px] flex-col items-start gap-1 self-center"
     >
       <!-- picture grids columns -->
       <div class="flex flex-col items-start gap-2 self-stretch">
@@ -671,7 +679,7 @@
           <div
             class="flex py-[10px] px-4 justify-center items-center gap-1 rounded-full border border-border-primary text-text-muted font-First text-[14px] not-italic font-semibold leading-5"
           >
-            <span class="material-symbols-outlined text-text-muted text-[7px]">
+            <span class="material-symbols-outlined text-text-muted text-[20px]">
               business_center
             </span>
             Our Projects
@@ -741,7 +749,8 @@
 
     <!---------------------------------------------------------------------------- Services section Start ------------------------------------------------------>
     <section
-      class="px-3 lg:px-[88px] pb-2 md:pb-4 max-w-[1744px] flex flex-col items-start gap-2 self-center"
+      id="service"
+      class="px-3 lg:px-6 xl:px-[88px] pt-2 pb-4 md:pt-4 md:pb-4 max-w-[1744px] flex flex-col items-start gap-2 self-center"
     >
       <!-- service card container -->
       <div class="flex flex-col lg:flex-row items-center gap-2 self-stretch">
@@ -776,7 +785,7 @@
           <div class="flex flex-col items-start gap-4 self-stretch">
             <!-- contianer animation design -->
             <div
-              class="absolute top-[9rem] left-[10rem] w-[120px] h-[120px] rotate-[152deg] bg-gradient-to-tr from-yellow-300 to-blue-500 filter blur-[60px] opacity-60 animate-blob"
+              class="absolute top-[9rem] left-[10rem] w-[120px] h-[120px] rotate-[152deg] bg-gradient-to-tr from-yellow-300 to-blue-500 filter blur-[60px] opacity-60 animate-blob animation-delay-2000"
             ></div>
             <!-- descriptions texts -->
             <div class="flex flex-col items-start self-stretch">
@@ -823,7 +832,7 @@
 
         <!-- card 2 -->
         <div
-          class="lg:min-h-[581px] xl:min-h-[390px] flex p-8 flex-col items-start gap-5 flex-2 rounded-[40px] bg-surface-primary who_we_are_shadow bg-service-svg bg-no-repeat"
+          class="relative lg:min-h-[581px] xl:min-h-[390px] flex p-8 flex-col items-start gap-5 flex-2 rounded-[40px] bg-surface-primary who_we_are_shadow"
         >
           <!-- card head -->
           <div class="flex justify-between items-start self-stretch">
@@ -850,6 +859,10 @@
 
           <!-- card content -->
           <div class="flex flex-col items-start gap-4 self-stretch">
+            <!-- contianer animation design -->
+            <div
+              class="absolute top-[9rem] left-[10rem] w-[120px] h-[120px] rotate-[152deg] bg-gradient-to-tr from-blue-300 to-blue-900 filter blur-[60px] opacity-60 animate-blob animation-delay-4000"
+            ></div>
             <!-- descriptions texts -->
             <div class="flex flex-col items-start self-stretch">
               <h1
@@ -895,7 +908,7 @@
 
         <!-- card 3 -->
         <div
-          class="lg:min-h-[581px] xl:min-h-[390px] flex p-8 flex-col items-start gap-5 flex-2 rounded-[40px] bg-surface-primary who_we_are_shadow bg-service-svg bg-no-repeat"
+          class="relative lg:min-h-[581px] xl:min-h-[390px] flex p-8 flex-col items-start gap-5 flex-2 rounded-[40px] bg-surface-primary who_we_are_shadow"
         >
           <!-- card head -->
           <div class="flex justify-between items-start self-stretch">
@@ -922,6 +935,10 @@
 
           <!-- card content -->
           <div class="flex flex-col items-start gap-4 self-stretch">
+            <!-- contianer animation design -->
+            <div
+              class="absolute top-[9rem] left-[10rem] w-[120px] h-[120px] rotate-[152deg] bg-gradient-to-tr from-yellow-300 to-blue-500 filter blur-[60px] opacity-60 animate-blob"
+            ></div>
             <!-- descriptions texts -->
             <div class="flex flex-col items-start self-stretch">
               <h1
@@ -1037,7 +1054,7 @@
             >
               <!-- icons -->
               <span
-                class="material-symbols-outlined flex p-4 items-center gap-[10px] rounded-full bg-slate-700 text-text-secondary text-2xl"
+                class="material-symbols-outlined flex p-4 items-center gap-[10px] rounded-full bg-slate-700 text-text-secondary text-[1.5rem]"
               >
                 groups
               </span>
@@ -1059,7 +1076,7 @@
             >
               <!-- icons -->
               <span
-                class="material-symbols-outlined flex p-4 items-center gap-[10px] rounded-full bg-slate-700 text-text-secondary text-2xl"
+                class="material-symbols-outlined flex p-4 items-center gap-[10px] rounded-full bg-slate-700 text-text-secondary text-[1.5rem]"
               >
                 account_balance_wallet
               </span>
@@ -1088,7 +1105,7 @@
             >
               <!-- icons -->
               <span
-                class="material-symbols-outlined flex p-4 items-center gap-[10px] rounded-full bg-slate-700 text-text-secondary text-2xl"
+                class="material-symbols-outlined flex p-4 items-center gap-[10px] rounded-full bg-slate-700 text-text-secondary text-[1.5rem]"
               >
                 schedule
               </span>
@@ -1110,7 +1127,7 @@
             >
               <!-- icons -->
               <span
-                class="material-symbols-outlined flex p-4 items-center gap-[10px] rounded-full bg-slate-700 text-text-secondary text-2xl"
+                class="material-symbols-outlined flex p-4 items-center gap-[10px] rounded-full bg-slate-700 text-text-secondary text-[1.5rem]"
               >
                 support
               </span>
@@ -1132,7 +1149,8 @@
 
     <!---------------------------------------------------------------------------- Pricing Section Start ------------------------------------------------------>
     <section
-      class="px-3 lg:px-[88px] md:pb-4 max-w-[1744px] flex flex-col items-start gap-2 self-center"
+      id="pricing"
+      class="px-3 lg:px-6 xl:px-[88px] pt-2 pb-4 md:pt-4 md:pb-4 max-w-[1744px] flex flex-col items-start gap-2 self-center"
     >
       <!-- main container -->
       <div
@@ -1144,7 +1162,7 @@
           <div
             class="flex py-[10px] px-4 justify-center items-center gap-1 rounded-full border border-border-primary text-text-muted font-First text-[14px] not-italic font-semibold leading-5"
           >
-            <span class="material-symbols-outlined text-text-muted text-[7px]">
+            <span class="material-symbols-outlined text-text-muted text-[20px]">
               paid
             </span>
             Pricing
@@ -1258,7 +1276,7 @@
               <div class="flex items-center gap-[10px] self-stretch">
                 <!-- done icon -->
                 <span
-                  class="material-symbols-outlined text-base text-white flex p-1 items-center gap-[10px] rounded-full bg-emerald-900"
+                  class="material-symbols-outlined text-white flex p-1 items-center gap-[10px] rounded-full bg-emerald-900"
                 >
                   check
                 </span>
@@ -1271,7 +1289,7 @@
               <div class="flex items-center gap-[10px] self-stretch">
                 <!-- done icon -->
                 <span
-                  class="material-symbols-outlined text-base text-white flex p-1 items-center gap-[10px] rounded-full bg-emerald-900"
+                  class="material-symbols-outlined text-white flex p-1 items-center gap-[10px] rounded-full bg-emerald-900"
                 >
                   check
                 </span>
@@ -1284,7 +1302,7 @@
               <div class="flex items-center gap-[10px] self-stretch">
                 <!-- done icon -->
                 <span
-                  class="material-symbols-outlined text-base text-white flex p-1 items-center gap-[10px] rounded-full bg-emerald-900"
+                  class="material-symbols-outlined text-white flex p-1 items-center gap-[10px] rounded-full bg-emerald-900"
                 >
                   check
                 </span>
@@ -1297,7 +1315,7 @@
               <div class="flex items-center gap-[10px] self-stretch">
                 <!-- done icon -->
                 <span
-                  class="material-symbols-outlined text-base text-white flex p-1 items-center gap-[10px] rounded-full bg-emerald-900"
+                  class="material-symbols-outlined text-white flex p-1 items-center gap-[10px] rounded-full bg-emerald-900"
                 >
                   check
                 </span>
@@ -1375,7 +1393,7 @@
               <div class="flex items-center gap-[10px] self-stretch">
                 <!-- done icon -->
                 <span
-                  class="material-symbols-outlined text-base text-white flex p-1 items-center gap-[10px] rounded-full bg-emerald-900"
+                  class="material-symbols-outlined text-white flex p-1 items-center gap-[10px] rounded-full bg-emerald-900"
                 >
                   check
                 </span>
@@ -1386,7 +1404,7 @@
               <div class="flex items-center gap-[10px] self-stretch">
                 <!-- done icon -->
                 <span
-                  class="material-symbols-outlined text-base text-white flex p-1 items-center gap-[10px] rounded-full bg-emerald-900"
+                  class="material-symbols-outlined text-white flex p-1 items-center gap-[10px] rounded-full bg-emerald-900"
                 >
                   check
                 </span>
@@ -1399,7 +1417,7 @@
               <div class="flex items-center gap-[10px] self-stretch">
                 <!-- done icon -->
                 <span
-                  class="material-symbols-outlined text-base text-white flex p-1 items-center gap-[10px] rounded-full bg-emerald-900"
+                  class="material-symbols-outlined text-white flex p-1 items-center gap-[10px] rounded-full bg-emerald-900"
                 >
                   check
                 </span>
@@ -1412,7 +1430,7 @@
               <div class="flex items-center gap-[10px] self-stretch">
                 <!-- done icon -->
                 <span
-                  class="material-symbols-outlined text-base text-white flex p-1 items-center gap-[10px] rounded-full bg-emerald-900"
+                  class="material-symbols-outlined text-white flex p-1 items-center gap-[10px] rounded-full bg-emerald-900"
                 >
                   check
                 </span>
@@ -1490,7 +1508,7 @@
               <div class="flex items-center gap-[10px] self-stretch">
                 <!-- done icon -->
                 <span
-                  class="material-symbols-outlined text-base text-white flex p-1 items-center gap-[10px] rounded-full bg-emerald-900"
+                  class="material-symbols-outlined text-white flex p-1 items-center gap-[10px] rounded-full bg-emerald-900"
                 >
                   check
                 </span>
@@ -1503,7 +1521,7 @@
               <div class="flex items-center gap-[10px] self-stretch">
                 <!-- done icon -->
                 <span
-                  class="material-symbols-outlined text-base text-white flex p-1 items-center gap-[10px] rounded-full bg-emerald-900"
+                  class="material-symbols-outlined text-white flex p-1 items-center gap-[10px] rounded-full bg-emerald-900"
                 >
                   check
                 </span>
@@ -1516,7 +1534,7 @@
               <div class="flex items-center gap-[10px] self-stretch">
                 <!-- done icon -->
                 <span
-                  class="material-symbols-outlined text-base text-white flex p-1 items-center gap-[10px] rounded-full bg-emerald-900"
+                  class="material-symbols-outlined text-white flex p-1 items-center gap-[10px] rounded-full bg-emerald-900"
                 >
                   check
                 </span>
@@ -1529,7 +1547,7 @@
               <div class="flex items-center gap-[10px] self-stretch">
                 <!-- done icon -->
                 <span
-                  class="material-symbols-outlined text-base text-white flex p-1 items-center gap-[10px] rounded-full bg-emerald-900"
+                  class="material-symbols-outlined text-white flex p-1 items-center gap-[10px] rounded-full bg-emerald-900"
                 >
                   check
                 </span>
@@ -1545,11 +1563,13 @@
     </section>
 
     <!---------------------------------------------------------------------------- Testimonial Section Start ------------------------------------------------------>
+
     <section
-      class="px-3 lg:px-[88px] pb-3 md:pb-4 flex max-w-[1744px] flex-col items-start gap-1 self-center"
+      id="testimonial"
+      class="w-[100%] 3xl:w-[1744px] px-3 lg:px-6 xl:px-[88px] pt-2 pb-4 md:pt-4 md:pb-4 flex-col items-start gap-1 self-center"
     >
       <div
-        class="relative w-full flex p-8 lg:py-[140px] lg:px-[104px] flex-col justify-center items-center gap-6 self-stretch rounded-[40px] border border-border-primary bg-surface-background who_we_are_shadow"
+        class="relative w-full flex p-3 md:p-8 lg:pt-[100px] lg:px-[60px] xl:py-[140px] xl:px-[104px] flex-col justify-center items-center gap-6 self-stretch rounded-[40px] border border-border-primary bg-surface-background who_we_are_shadow"
       >
         <!-- Quote icon vector -->
         <div
@@ -1559,32 +1579,38 @@
           <img src="/img/Vector.svg" alt="vector" class="w-[57px] h-[110px]" />
         </div>
 
-        <!-- swiper js for Testimonial -->
+        <!-- flowbite for Testimonial -->
+
         <div
-          class="swiper swiper-container slider2 bg-surface-background w-[80%] pb-16"
+          id="default-carousel"
+          class="relative w-full 2xl:w-[80%]"
+          data-carousel="slide"
         >
-          <div class="swiper-wrapper bg-surface-background">
-            <!-- slide 1 -->
-            <div class="swiper-slide bg-surface-background">
+          <!-- Carousel wrapper -->
+          <div
+            class="relative h-[35rem] sm:h-[42rem] md:h-[54rem] lg:h-[27rem] overflow-hidden rounded-lg"
+          >
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
               <div
-                class="flex flex-col lg:flex-row items-center gap-6 self-stretch shadow-6xl bg-surface-background"
+                class="flex flex-col lg:flex-row items-center gap-3 md:gap-6 self-stretch shadow-6xl bg-surface-background"
               >
                 <!-- avatar -->
                 <img
                   src="/img/avatar1.png"
                   alt="Picture"
-                  class="flex w-[372px] h-[400px] items-center rounded-[32px]"
+                  class="flex w-[250px] md:w-[372px] h-[250px] md:h-[400px] items-center rounded-[32px]"
                 />
                 <!-- client review -->
                 <div
-                  class="flex p-12 flex-col justify-center items-start gap-6 flex-2 self-stretch rounded-[32px] bg-surface-primary"
+                  class="flex p-4 md:p-12 flex-col justify-center items-start gap-2 md:gap-6 flex-2 self-stretch rounded-[32px] bg-surface-primary"
                 >
                   <!-- review tags -->
                   <div
                     class="flex py-[10px] px-4 justify-center items-center gap-1 rounded-full border border-border-dark text-text-muted font-First text-[14px] not-italic font-semibold leading-5"
                   >
                     <span
-                      class="material-symbols-outlined text-text-muted text-[7px]"
+                      class="material-symbols-outlined text-text-muted text-[20px]"
                     >
                       reviews
                     </span>
@@ -1606,10 +1632,12 @@
                   </p>
 
                   <!-- clients profile  -->
-                  <div class="flex justify-between items-center self-stretch">
+                  <div
+                    class="flex flex-col lg:flex-row justify-between items-center self-center md:self-stretch"
+                  >
                     <!-- clients info -->
                     <div
-                      class="flex max-w-[215px] flex-col items-start gap-[2px] self-stretch"
+                      class="flex max-w-[215px] flex-col items-center lg:items-start gap-[2px] self-stretch"
                     >
                       <h2 class="sub_title_sm">John Doe</h2>
                       <p class="body_xs !text-text-primary">
@@ -1642,106 +1670,27 @@
                 </div>
               </div>
             </div>
-            <!-- slide 2 -->
-            <div class="swiper-slide bg-surface-background">
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
               <div
-                class="flex flex-col lg:flex-row items-center gap-6 self-stretch shadow-6xl bg-surface-background"
-              >
-                <!-- avatar -->
-                <img
-                  src="/img/avatar2.png"
-                  alt="Picture"
-                  class="flex w-[372px] h-[400px] items-center rounded-[32px]"
-                />
-                <!-- client review -->
-                <div
-                  class="flex p-12 flex-col justify-center items-start gap-6 flex-2 self-stretch rounded-[32px] bg-surface-primary"
-                >
-                  <!-- review tags -->
-                  <div
-                    class="flex py-[10px] px-4 justify-center items-center gap-1 rounded-full border border-border-dark text-text-muted font-First text-[14px] not-italic font-semibold leading-5"
-                  >
-                    <span
-                      class="material-symbols-outlined text-text-muted text-[7px]"
-                    >
-                      reviews
-                    </span>
-                    Client’s Review
-                  </div>
-                  <!-- review description text -->
-                  <p
-                    class="text-start line-clamp-4 font-First text[20px] leading-7 sm:text-[28px] not-italic font-bold sm:leading-10 bg-clip-text text-transparent bg-gradient-to-br from-[#43CBFF] from-0% to-[#9708CC] to-100%"
-                  >
-                    "FnFByte truly transformed our digital presence. Their team
-                    was not only creative but also incredibly knowledgeable in
-                    the latest tech trends. From the initial brainstorming
-                    sessions to the final launch, their attention to detail and
-                    dedication to delivering a user-friendly, visually striking
-                    website exceeded all our expectations. We’ve seen a
-                    significant increase in traffic and engagement, and the
-                    seamless UX they designed has contributed to a smoother
-                    customer experience. Highly recommend!"
-                  </p>
-
-                  <!-- clients profile  -->
-                  <div class="flex justify-between items-center self-stretch">
-                    <!-- clients info -->
-                    <div
-                      class="flex max-w-[215px] flex-col items-start gap-[2px] self-stretch"
-                    >
-                      <h2 class="sub_title_sm">John Doe</h2>
-                      <p class="body_xs !text-text-primary">
-                        CEO of TechNova Solutions
-                      </p>
-                    </div>
-
-                    <!-- button -->
-                    <a
-                      href="#"
-                      class="moving_arrow_button w-[100%] md:w-[190px] flex flex-row py-3 pl-[1.25rem] pr-3 bg-surface-brand hover:bg-surface-brand-hover transition ease-out duration-500 rounded-full text-white font-First font-bold gap-1 text-sm justify-center items-center sm:flex"
-                    >
-                      Read the full story
-                      <div
-                        class="flex flex-col h-5 w-6 relative overflow-hidden"
-                      >
-                        <span
-                          class="material-symbols-outlined relative hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
-                        >
-                          arrow_outward
-                        </span>
-                        <span
-                          class="material-symbols-outlined relative -left-6 hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
-                        >
-                          arrow_outward
-                        </span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- slide 3 -->
-            <div class="swiper-slide bg-surface-background">
-              <div
-                class="flex flex-col lg:flex-row items-center gap-6 self-stretch shadow-6xl bg-surface-background"
+                class="flex flex-col lg:flex-row items-center gap-3 md:gap-6 self-stretch shadow-6xl bg-surface-background"
               >
                 <!-- avatar -->
                 <img
                   src="/img/avatar1.png"
                   alt="Picture"
-                  class="flex w-[372px] h-[400px] items-center rounded-[32px]"
+                  class="flex w-[250px] md:w-[372px] h-[250px] md:h-[400px] items-center rounded-[32px]"
                 />
                 <!-- client review -->
                 <div
-                  class="flex p-12 flex-col justify-center items-start gap-6 flex-2 self-stretch rounded-[32px] bg-surface-primary"
+                  class="flex p-4 md:p-12 flex-col justify-center items-start gap-2 md:gap-6 flex-2 self-stretch rounded-[32px] bg-surface-primary"
                 >
                   <!-- review tags -->
                   <div
                     class="flex py-[10px] px-4 justify-center items-center gap-1 rounded-full border border-border-dark text-text-muted font-First text-[14px] not-italic font-semibold leading-5"
                   >
                     <span
-                      class="material-symbols-outlined text-text-muted text-[7px]"
+                      class="material-symbols-outlined text-text-muted text-[20px]"
                     >
                       reviews
                     </span>
@@ -1763,10 +1712,12 @@
                   </p>
 
                   <!-- clients profile  -->
-                  <div class="flex justify-between items-center self-stretch">
+                  <div
+                    class="flex flex-col lg:flex-row justify-between items-center self-center md:self-stretch"
+                  >
                     <!-- clients info -->
                     <div
-                      class="flex max-w-[215px] flex-col items-start gap-[2px] self-stretch"
+                      class="flex max-w-[215px] flex-col items-center lg:items-start gap-[2px] self-stretch"
                     >
                       <h2 class="sub_title_sm">John Doe</h2>
                       <p class="body_xs !text-text-primary">
@@ -1799,28 +1750,27 @@
                 </div>
               </div>
             </div>
-
-            <!-- slide 4 -->
-            <div class="swiper-slide bg-surface-background">
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
               <div
-                class="flex flex-col lg:flex-row items-center gap-6 self-stretch shadow-6xl bg-surface-background"
+                class="flex flex-col lg:flex-row items-center gap-3 md:gap-6 self-stretch shadow-6xl bg-surface-background"
               >
                 <!-- avatar -->
                 <img
-                  src="/img/avatar2.png"
+                  src="/img/avatar1.png"
                   alt="Picture"
-                  class="flex w-[372px] h-[400px] items-center rounded-[32px]"
+                  class="flex w-[250px] md:w-[372px] h-[250px] md:h-[400px] items-center rounded-[32px]"
                 />
                 <!-- client review -->
                 <div
-                  class="flex p-12 flex-col justify-center items-start gap-6 flex-2 self-stretch rounded-[32px] bg-surface-primary"
+                  class="flex p-4 md:p-12 flex-col justify-center items-start gap-2 md:gap-6 flex-2 self-stretch rounded-[32px] bg-surface-primary"
                 >
                   <!-- review tags -->
                   <div
                     class="flex py-[10px] px-4 justify-center items-center gap-1 rounded-full border border-border-dark text-text-muted font-First text-[14px] not-italic font-semibold leading-5"
                   >
                     <span
-                      class="material-symbols-outlined text-text-muted text-[7px]"
+                      class="material-symbols-outlined text-text-muted text-[20px]"
                     >
                       reviews
                     </span>
@@ -1842,10 +1792,172 @@
                   </p>
 
                   <!-- clients profile  -->
-                  <div class="flex justify-between items-center self-stretch">
+                  <div
+                    class="flex flex-col lg:flex-row justify-between items-center self-center md:self-stretch"
+                  >
                     <!-- clients info -->
                     <div
-                      class="flex max-w-[215px] flex-col items-start gap-[2px] self-stretch"
+                      class="flex max-w-[215px] flex-col items-center lg:items-start gap-[2px] self-stretch"
+                    >
+                      <h2 class="sub_title_sm">John Doe</h2>
+                      <p class="body_xs !text-text-primary">
+                        CEO of TechNova Solutions
+                      </p>
+                    </div>
+
+                    <!-- button -->
+                    <a
+                      href="#"
+                      class="moving_arrow_button w-[100%] md:w-[190px] flex flex-row py-3 pl-[1.25rem] pr-3 bg-surface-brand hover:bg-surface-brand-hover transition ease-out duration-500 rounded-full text-white font-First font-bold gap-1 text-sm justify-center items-center sm:flex"
+                    >
+                      Read the full story
+                      <div
+                        class="flex flex-col h-5 w-6 relative overflow-hidden"
+                      >
+                        <span
+                          class="material-symbols-outlined relative hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+                        >
+                          arrow_outward
+                        </span>
+                        <span
+                          class="material-symbols-outlined relative -left-6 hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+                        >
+                          arrow_outward
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <div
+                class="flex flex-col lg:flex-row items-center gap-3 md:gap-6 self-stretch shadow-6xl bg-surface-background"
+              >
+                <!-- avatar -->
+                <img
+                  src="/img/avatar1.png"
+                  alt="Picture"
+                  class="flex w-[250px] md:w-[372px] h-[250px] md:h-[400px] items-center rounded-[32px]"
+                />
+                <!-- client review -->
+                <div
+                  class="flex p-4 md:p-12 flex-col justify-center items-start gap-2 md:gap-6 flex-2 self-stretch rounded-[32px] bg-surface-primary"
+                >
+                  <!-- review tags -->
+                  <div
+                    class="flex py-[10px] px-4 justify-center items-center gap-1 rounded-full border border-border-dark text-text-muted font-First text-[14px] not-italic font-semibold leading-5"
+                  >
+                    <span
+                      class="material-symbols-outlined text-text-muted text-[20px]"
+                    >
+                      reviews
+                    </span>
+                    Client’s Review
+                  </div>
+                  <!-- review description text -->
+                  <p
+                    class="text-start line-clamp-4 font-First text[20px] leading-7 sm:text-[28px] not-italic font-bold sm:leading-10 bg-clip-text text-transparent bg-gradient-to-br from-[#43CBFF] from-0% to-[#9708CC] to-100%"
+                  >
+                    "FnFByte truly transformed our digital presence. Their team
+                    was not only creative but also incredibly knowledgeable in
+                    the latest tech trends. From the initial brainstorming
+                    sessions to the final launch, their attention to detail and
+                    dedication to delivering a user-friendly, visually striking
+                    website exceeded all our expectations. We’ve seen a
+                    significant increase in traffic and engagement, and the
+                    seamless UX they designed has contributed to a smoother
+                    customer experience. Highly recommend!"
+                  </p>
+
+                  <!-- clients profile  -->
+                  <div
+                    class="flex flex-col lg:flex-row justify-between items-center self-center md:self-stretch"
+                  >
+                    <!-- clients info -->
+                    <div
+                      class="flex max-w-[215px] flex-col items-center lg:items-start gap-[2px] self-stretch"
+                    >
+                      <h2 class="sub_title_sm">John Doe</h2>
+                      <p class="body_xs !text-text-primary">
+                        CEO of TechNova Solutions
+                      </p>
+                    </div>
+
+                    <!-- button -->
+                    <a
+                      href="#"
+                      class="moving_arrow_button w-[100%] md:w-[190px] flex flex-row py-3 pl-[1.25rem] pr-3 bg-surface-brand hover:bg-surface-brand-hover transition ease-out duration-500 rounded-full text-white font-First font-bold gap-1 text-sm justify-center items-center sm:flex"
+                    >
+                      Read the full story
+                      <div
+                        class="flex flex-col h-5 w-6 relative overflow-hidden"
+                      >
+                        <span
+                          class="material-symbols-outlined relative hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+                        >
+                          arrow_outward
+                        </span>
+                        <span
+                          class="material-symbols-outlined relative -left-6 hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+                        >
+                          arrow_outward
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <div
+                class="flex flex-col lg:flex-row items-center gap-3 md:gap-6 self-stretch shadow-6xl bg-surface-background"
+              >
+                <!-- avatar -->
+                <img
+                  src="/img/avatar1.png"
+                  alt="Picture"
+                  class="flex w-[250px] md:w-[372px] h-[250px] md:h-[400px] items-center rounded-[32px]"
+                />
+                <!-- client review -->
+                <div
+                  class="flex p-4 md:p-12 flex-col justify-center items-start gap-2 md:gap-6 flex-2 self-stretch rounded-[32px] bg-surface-primary"
+                >
+                  <!-- review tags -->
+                  <div
+                    class="flex py-[10px] px-4 justify-center items-center gap-1 rounded-full border border-border-dark text-text-muted font-First text-[14px] not-italic font-semibold leading-5"
+                  >
+                    <span
+                      class="material-symbols-outlined text-text-muted text-[20px]"
+                    >
+                      reviews
+                    </span>
+                    Client’s Review
+                  </div>
+                  <!-- review description text -->
+                  <p
+                    class="text-start line-clamp-4 font-First text[20px] leading-7 sm:text-[28px] not-italic font-bold sm:leading-10 bg-clip-text text-transparent bg-gradient-to-br from-[#43CBFF] from-0% to-[#9708CC] to-100%"
+                  >
+                    "FnFByte truly transformed our digital presence. Their team
+                    was not only creative but also incredibly knowledgeable in
+                    the latest tech trends. From the initial brainstorming
+                    sessions to the final launch, their attention to detail and
+                    dedication to delivering a user-friendly, visually striking
+                    website exceeded all our expectations. We’ve seen a
+                    significant increase in traffic and engagement, and the
+                    seamless UX they designed has contributed to a smoother
+                    customer experience. Highly recommend!"
+                  </p>
+
+                  <!-- clients profile  -->
+                  <div
+                    class="flex flex-col lg:flex-row justify-between items-center self-center md:self-stretch"
+                  >
+                    <!-- clients info -->
+                    <div
+                      class="flex max-w-[215px] flex-col items-center lg:items-start gap-[2px] self-stretch"
                     >
                       <h2 class="sub_title_sm">John Doe</h2>
                       <p class="body_xs !text-text-primary">
@@ -1879,27 +1991,1212 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-next">
-            <span
-              class="material-symbols-outlined flex p-3 items-center rounded-full bg-surface-brand shadow-6xl text-white text-[24px]"
-            >
-              chevron_right
-            </span>
+          <!-- Slider indicators -->
+          <div
+            class="absolute z-30 flex -translate-x-1/2 bottom-[0.75rem] left-[25%] sm:left-[5%] space-x-3 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 4"
+              data-carousel-slide-to="3"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 5"
+              data-carousel-slide-to="4"
+            ></button>
           </div>
-          <div class="swiper-button-prev">
-            <span
-              class="material-symbols-outlined flex p-3 items-center rounded-full bg-surface-brand shadow-6xl text-white text-[24px]"
+          <!-- Slider controls -->
+          <div class="relative flex w-full gap-1 justify-end">
+            <button
+              type="button"
+              class="flex items-center justify-center h-full cursor-pointer group focus:outline-none"
+              data-carousel-prev
             >
-              chevron_left
-            </span>
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-surface-brand group-hover:bg-surface-brand-hover transition-colors duration-700 group-focus:outline-none"
+              >
+                <svg
+                  class="w-4 h-4 text-white rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 1 1 5l4 4"
+                  />
+                </svg>
+                <span class="sr-only">Previous</span>
+              </span>
+            </button>
+            <button
+              type="button"
+              class="flex items-center justify-center h-full cursor-pointer rounded-full group focus:outline-none"
+              data-carousel-next
+            >
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-surface-brand group-hover:bg-surface-brand-hover transition-colors duration-700 group-focus:outline-none"
+              >
+                <svg
+                  class="w-4 h-4 text-white rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 9 4-4-4-4"
+                  />
+                </svg>
+                <span class="sr-only">Next</span>
+              </span>
+            </button>
           </div>
-          <div class="swiper-pagination flex !bottom-[30px]"></div>
         </div>
       </div>
     </section>
 
+    <!---------------------------------------------------------------------------- Blog Section Start ------------------------------------------------------>
+
+    <section
+      id="blog"
+      class="px-3 lg:px-6 xl:px-[88px] pt-2 pb-4 md:pt-4 md:pb-4 flex flex-col md:flex-row max-w-[1744px] items-start gap-2 self-center"
+    >
+      <!-- Blog Card 1 -->
+      <div
+        class="flex flex-col justify-center items-start flex-2 rounded-[40px] border border-border-primary bg-surface-background overflow-hidden"
+      >
+        <img
+          src="/img/cover placeholder.png"
+          alt="cover image"
+          class="flex justify-center items-center self-stretch h-[292px] -mt[10px]"
+        />
+        <div
+          class="flex p-6 flex-col justify-center items-start gap-2 self-stretch"
+        >
+          <!-- tags -->
+          <div
+            class="flex items-center content-center gap-1 self-stretch flex-wrap"
+          >
+            <span
+              class="flex px-[10px] py-1 justify-center items-center gap-[6px] rounded-full border border-border-primary font-First text-text-muted text-[14px] not-italic font-medium capitalize"
+              >Branding</span
+            >
+            <span
+              class="flex px-[10px] py-1 justify-center items-center gap-[6px] rounded-full border border-border-primary font-First text-text-muted text-[14px] not-italic font-medium capitalize"
+              >uI/UX Design</span
+            >
+          </div>
+          <!-- titiles -->
+          <h2
+            class="line-clamp-2 text-white font-First text-[20px] not-italic font-semibold capitalize"
+          >
+            Why Should Give Your Design Agency The Freedom To Innovate?
+          </h2>
+          <p
+            class="font-First text-text-muted text-[14px] not-italic font-medium"
+          >
+            8 Min
+          </p>
+        </div>
+      </div>
+      <!-- Blog Card 2 -->
+      <div
+        class="flex flex-col justify-center items-start flex-2 rounded-[40px] border border-border-primary bg-surface-background overflow-hidden"
+      >
+        <img
+          src="/img/cover placeholder (1).png"
+          alt="cover image"
+          class="flex justify-center items-center self-stretch h-[292px] -mt[10px]"
+        />
+        <div
+          class="flex p-6 flex-col justify-center items-start gap-2 self-stretch"
+        >
+          <!-- tags -->
+          <div
+            class="flex items-center content-center gap-1 self-stretch flex-wrap"
+          >
+            <span
+              class="flex px-[10px] py-1 justify-center items-center gap-[6px] rounded-full border border-border-primary font-First text-text-muted text-[14px] not-italic font-medium capitalize"
+              >Web App</span
+            >
+            <span
+              class="flex px-[10px] py-1 justify-center items-center gap-[6px] rounded-full border border-border-primary font-First text-text-muted text-[14px] not-italic font-medium capitalize"
+              >Business</span
+            >
+          </div>
+          <!-- titiles -->
+          <h2
+            class="line-clamp-2 text-white font-First text-[20px] not-italic font-semibold capitalize"
+          >
+            Why Should Give Your Design Agency The Freedom To Innovate?
+          </h2>
+          <p
+            class="font-First text-text-muted text-[14px] not-italic font-medium"
+          >
+            8 Min
+          </p>
+        </div>
+      </div>
+      <!-- Blog Card 3 -->
+      <div
+        class="flex p-6 flex-col items-start gap-6 flex-2 self-stretch rounded-[40px] bg-gradient-to-br from-[#1202B1] from-0% to-[#310135] to-100%"
+      >
+        <!-- tags -->
+        <div
+          class="flex py-[10px] px-[16px] justify-center items-center gap-1 rounded-full border border-[#fafafa33]"
+        >
+          <span class="material-symbols-outlined text-white text-[20px]">
+            developer_board
+          </span>
+          <span class="body_base_medium !text-white">Blogs</span>
+        </div>
+        <!-- text and button -->
+        <div
+          class="flex flex-col justify-between items-start flex-2 self-stretch gap-3"
+        >
+          <!-- text -->
+          <p class="sub_title_xl">
+            Take a look behind the scenes, and discover the untold stories
+            behind our projects, lessons learned, work culture, and business
+            curiosities.
+          </p>
+          <!-- button -->
+          <a
+            href="#"
+            class="moving_arrow_button p-3 bg-[#18181B] hover:bg-surface-brand-hover transition ease-out duration-500 rounded-full text-white font-First font-bold gap-1 text-sm self-start justify-center items-center flex pl-[20px] py-[12px] pr-[12px] w-full sm:w-[181px]"
+          >
+            Find More Article
+            <div class="flex flex-col h-5 w-6 relative overflow-hidden">
+              <span
+                class="material-symbols-outlined relative hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+              >
+                arrow_outward
+              </span>
+              <span
+                class="material-symbols-outlined relative -left-6 hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+              >
+                arrow_outward
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------------------------------------------------- FAQ Section Start ------------------------------------------------------>
+
+    <section
+      id="faq"
+      class="px-3 lg:px-6 xl:px-[88px] pt-2 pb-4 md:pt-4 md:pb-4 flex self-center max-w-[1744px]"
+    >
+      <div
+        class="who_we_are_shadow flex flex-col xl:flex-row self-center w-full p-4 sm:p-8 lg:p-20 items-start gap-12 self-centerc rounded-[2.5rem] border border-border-primary bg-navbar-color inset"
+      >
+        <!-- content 1 -->
+        <div class="flex flex-col items-start gap-[48px] flex-2">
+          <div class="flex flex-col items-start gap-4 self-stretch">
+            <!-- tag FAQ's -->
+            <div
+              class="flex py-[10px] px-4 justify-center items-center gap-1 rounded-full border border-border-primary text-text-muted font-First text-[14px] not-italic font-semibold leading-5 mb-6 md:mb-0"
+            >
+              <span
+                class="material-symbols-outlined text-[20px] text-text-muted"
+              >
+                help
+              </span>
+              FAQs
+            </div>
+            <div
+              class="flex h-[92px] flex-col justify-center items-start gap-1 self-stretch"
+            >
+              <h2
+                class="font-First text-start text[20px] leading-7 sm:text-[28px] not-italic font-bold sm:leading-10 bg-clip-text text-transparent bg-gradient-to-br from-[#43CBFF] from-0% to-[#9708CC] to-100%"
+              >
+                It will be very useful
+              </h2>
+              <p class="body_base text-start">
+                Hmm, if you haven't found the answer for yourself. No matter
+                what stage your idea or project is in. Let's meet to discuss and
+                plan the next steps to make it happen in the most efficient way.
+                🤝
+              </p>
+            </div>
+          </div>
+
+          <!--button -->
+          <a
+            href="#"
+            class="moving_arrow_button w-full md:w-[175px] flex flex-row py-3 pl-[1.25rem] pr-3 bg-surface-brand hover:bg-surface-brand-hover transition ease-out duration-500 rounded-full text-white font-First font-bold gap-1 text-sm self-start justify-center items-center sm:flex"
+          >
+            Schedule a call
+            <div class="flex flex-col h-5 w-6 relative overflow-hidden">
+              <span
+                class="material-symbols-outlined relative hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+              >
+                arrow_outward
+              </span>
+              <span
+                class="material-symbols-outlined relative -left-6 hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+              >
+                arrow_outward
+              </span>
+            </div>
+          </a>
+        </div>
+
+        <!-- content 2 -->
+        <div class="flex flex-col items-start gap-2 flex-2 w-full">
+          <!-- QA 1 -->
+          <div
+            class="accordion-item cursor-pointer flex p-6 items-center gap-4 self-stretch rounded-2xl border border-border-primary transition duration-200"
+          >
+            <!-- question and answer -->
+            <div class="flex flex-col items-start gap-1 flex-2">
+              <!-- question -->
+              <h3 class="sub_title_sm self-stretch">
+                What services do you offer?
+              </h3>
+              <!-- answer -->
+              <p class="toggle body_base self-stretch">
+                We offer a wide range of services, including UI/UX design, web
+                development, mobile app development, and digital marketing.
+              </p>
+            </div>
+            <!-- icon -->
+            <div class="flex w-[36px] items-start gap-[10px] self-start">
+              <span
+                class="material-symbols-outlined flex p-2 items-center flex-2 rounded-full bg-surface-primary text-[20px] text-text-secondary accordion-icon"
+              >
+                keyboard_arrow_down
+              </span>
+            </div>
+          </div>
+          <!-- QA 2 -->
+          <div
+            class="accordion-item cursor-pointer flex p-6 items-center gap-4 self-stretch rounded-2xl border border-border-primary transition duration-200"
+          >
+            <!-- question and answer -->
+            <div class="flex flex-col items-start gap-1 flex-2">
+              <!-- question -->
+              <h3 class="sub_title_sm self-stretch">
+                How does the project process work?
+              </h3>
+              <!-- answer -->
+              <p class="toggle hidden body_base self-stretch">
+                We offer a wide range of services, including UI/UX design, web
+                development, mobile app development, and digital marketing.
+              </p>
+            </div>
+            <!-- icon -->
+            <div class="flex w-[36px] items-start gap-[10px] self-start">
+              <span
+                class="material-symbols-outlined flex p-2 items-center flex-2 rounded-full bg-surface-primary text-[20px] text-text-secondary accordion-icon"
+              >
+                keyboard_arrow_down
+              </span>
+            </div>
+          </div>
+          <!-- QA 3 -->
+          <div
+            class="accordion-item cursor-pointer flex p-6 items-center gap-4 self-stretch rounded-2xl border border-border-primary transition duration-200"
+          >
+            <!-- question and answer -->
+            <div class="flex flex-col items-start gap-1 flex-2">
+              <!-- question -->
+              <h3 class="sub_title_sm self-stretch">
+                How long does a typical project take?
+              </h3>
+              <!-- answer -->
+              <p class="toggle hidden body_base self-stretch">
+                We offer a wide range of services, including UI/UX design, web
+                development, mobile app development, and digital marketing.
+              </p>
+            </div>
+            <!-- icon -->
+            <div class="flex w-[36px] items-start gap-[10px] self-start">
+              <span
+                class="material-symbols-outlined flex p-2 items-center flex-2 rounded-full bg-surface-primary text-[20px] text-text-secondary accordion-icon"
+              >
+                keyboard_arrow_down
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------------------------------------------------- Additional Section Start ------------------------------------------------------>
+
+    <section
+      id="additional"
+      class="px-3 lg:px-6 xl:px-[88px] pt-2 pb-4 md:pt-4 md:pb-4 max-w-[1744px] flex flex-col md:flex-row items-start gap-2 self-center"
+    >
+      <!-- content 1 -->
+      <div
+        class="flex p-4 md:p-8 xl:p-20 flex-col items-start gap-4 flex-2 self-stretch rounded-[40px] border border-border-primary bg-gradient-to-br from-[#00652E] from-0% to-[#1F1F20] to-100%"
+      >
+        <!-- tag -->
+        <div
+          class="flex py-[10px] px-4 justify-center items-center gap-1 rounded-full border border-[#fafafa33]"
+        >
+          <span class="material-symbols-outlined text-white text-[20px]">
+            dialpad
+          </span>
+          <p class="body_base_medium !text-white">Communicate</p>
+        </div>
+        <!-- info -->
+        <div class="flex flex-col items-start gap-6 flex-2 self-stretch">
+          <!-- text -->
+          <div
+            class="flex flex-col justify-center items-center gap-[10px] self-stretch"
+          >
+            <h2 class="sub_title_xl self-stretch">
+              Together, Let’s Create Something Really Incredible.
+            </h2>
+            <p class="body_base self-stretch !text-white">
+              Contact us Quickly!
+            </p>
+          </div>
+          <!-- buttons -->
+          <div
+            class="flex flex-col md:flex-row p-2 items-end gap-3 flex-2 self-stretch"
+          >
+            <a
+              href="#"
+              type="button"
+              class="w-full md:w-[184px] flex h-12 py-3 px-4 justify-center items-center gap-1 rounded-full bg-surface-background shadow-3xl hover:bg-surface-brand-hover duration-700 transition"
+            >
+              <i class="fa-brands fa-whatsapp text-[24px] text-white"></i>
+              <span
+                class="text-white font-First not-italic font-semibold leading-none"
+                >+880 1779911491</span
+              >
+            </a>
+            <a
+              href="#"
+              type="button"
+              class="w-full md:w-[216px] flex h-12 py-3 px-4 justify-center items-center gap-1 rounded-full bg-surface-background shadow-3xl hover:bg-surface-brand-hover duration-700 transition"
+            >
+              <span class="material-symbols-outlined text-[24px] text-white">
+                mail
+              </span>
+
+              <span
+                class="text-white font-First not-italic font-semibold leading-none"
+                >hello@fnfbyte.com</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- content 2 -->
+      <div
+        class="flex p-4 md:p-8 xl:p-20 flex-col items-start gap-4 flex-2 self-stretch rounded-[40px] border border-border-primary bg-gradient-to-br from-[#653B00] from-0% to-[#1F1F20] to-100%"
+      >
+        <!-- tag -->
+        <div
+          class="flex py-[10px] px-4 justify-center items-center gap-1 rounded-full border border-[#fafafa33]"
+        >
+          <span class="material-symbols-outlined text-white text-[20px]">
+            email
+          </span>
+          <p class="body_base_medium !text-white">Newsletter</p>
+        </div>
+        <!-- info -->
+        <div class="flex flex-col items-start gap-6 flex-2 self-stretch">
+          <!-- text -->
+          <div
+            class="flex flex-col justify-center items-center gap-[10px] self-stretch"
+          >
+            <h2 class="sub_title_xl self-stretch">
+              Subscribe to our newsletter to stay in touch with the latest.
+            </h2>
+            <p class="body_base self-stretch !text-white">
+              Have more questions? Book a FREE intro call.
+            </p>
+          </div>
+          <!-- email input -->
+          <div
+            class="flex flex-col md:flex-row p-[2px] items-center self-stretch rounded-full md:bg-surface-background"
+          >
+            <div
+              class="flex py-3 px-4 items-center gap-2 self-stretch w-full rounded-full bg-surface-background outline outline-1 -outline-offset-1 has-[input:focus-within]:outline has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-indigo-600"
+            >
+              <!-- icon -->
+              <span
+                class="material-symbols-outlined text-text-primary text-[24px]"
+              >
+                email
+              </span>
+              <!-- email -->
+              <input
+                type="email"
+                name="email"
+                id="email-input"
+                class="flex flex-2 text-text-muted body_base bg-surface-background w-full focus:border-none focus:outline focus:outline-0 border-none p-0 ring-offset-0 focus:ring-offset-0 focus:ring-0]"
+                placeholder="Ex. johndoe@example.com"
+              />
+            </div>
+            <!--button -->
+            <button
+              type="submit"
+              class="moving_arrow_button w-full md:w-[238px] flex flex-row py-3 pl-[1.25rem] pr-3 bg-surface-brand hover:bg-surface-brand-hover transition ease-out duration-500 rounded-full text-white font-First font-bold gap-1 text-sm self-center justify-center items-center sm:flex mt-2 md:mt-0"
+            >
+              Subscribe Us
+              <div class="flex flex-col h-5 w-6 relative overflow-hidden">
+                <span
+                  class="material-symbols-outlined relative hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+                >
+                  arrow_outward
+                </span>
+                <span
+                  class="material-symbols-outlined relative -left-6 hover:translate-x-6 hover:-translate-y-6 transition ease-out duration-200"
+                >
+                  arrow_outward
+                </span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------------------------------------------------- Footer Section Start ------------------------------------------------------>
+
+    <footer
+      id="footer"
+      class="px-3 lg:px-6 xl:px-[88px] pt-2 pb-4 md:pt-4 md:pb-4 flex self-center max-w-[1744px]"
+    >
+      <div
+        class="who_we_are_shadow flex flex-col xl:flex-row self-center w-full p-4 sm:p-8 lg:p-20 items-start gap-12 rounded-[2.5rem] border border-border-primary bg-navbar-color inset"
+      >
+        <!-- footer head content -->
+        <div class="flex flex-col items-start gap-5 self-stretch w-full">
+          <!-- logo container -->
+          <div class="flex justify-between items-center self-stretch">
+            <!-- logo fnfbyte -->
+            <a href="#">
+              <div class="flex items-center">
+                <img src="/img/logo.svg" alt="logo" />
+                <div
+                  class="flex h-12 py-3 px-4 justify-center items-center rounded-[625rem] text-white font-First font-bold not-italic text-xl"
+                >
+                  FnF<span class="text-indigo-500">Byte</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- download button -->
+            <a
+              href="https://www.fnfbyte.com"
+              target="_blank"
+              class="hidden md:flex py-3 px-4 items-center gap-1 rounded-full bg-surface-brand hover:bg-surface-brand-hover transition duration-700"
+            >
+              <span class="material-symbols-outlined text-[24px] text-white">
+                download
+              </span>
+              <span class="body_base !font-bold !text-white">Company Deck</span>
+            </a>
+          </div>
+          <!-- head body footer-->
+          <div
+            class="flex flex-col lg:flex-row items-start gap-4 lg:gap-[96px] self-stretch"
+          >
+            <!-- info container -->
+            <div class="flex flex-col justify-center items-start gap-4 flex-2">
+              <!-- info text -->
+              <p class="body_base self-stretch">
+                FnFByte is committed to delivering exceptional digital
+                experiences that drive growth and success.
+              </p>
+              <!-- info icon -->
+              <div
+                class="flex flex-wrap justify-center items-center gap-[10px]"
+              >
+                <!-- twiter -->
+                <a
+                  href="#"
+                  class="p-4 justify-center items-center rounded-full border border-cyan-950 hover:bg-black hover:transition-colors hover:duration-700"
+                >
+                  <i
+                    class="fa-brands fa-x-twitter flex text-[24px] text-white"
+                  ></i>
+                </a>
+                <!-- facebook -->
+                <a
+                  href="#"
+                  class="p-4 px-5 justify-center items-center rounded-full border border-cyan-950 hover:bg-blue-700 hover:transition-colors hover:duration-700"
+                >
+                  <i
+                    class="fa-brands fa-facebook-f flex text-[24px] text-white"
+                  ></i>
+                </a>
+                <!-- linkedin -->
+                <a
+                  href="#"
+                  class="p-4 px-[18px] justify-center items-center rounded-full border border-cyan-950 hover:bg-blue-900 hover:transition-colors hover:duration-700"
+                >
+                  <i
+                    class="fa-brands fa-linkedin flex text-[24px] text-white"
+                  ></i>
+                </a>
+                <!-- behance -->
+                <a
+                  href="#"
+                  class="p-4 justify-center items-center rounded-full border border-cyan-950 hover:bg-blue-600 hover:transition-colors hover:duration-700"
+                >
+                  <i
+                    class="fa-brands fa-behance flex text-[24px] text-white"
+                  ></i>
+                </a>
+                <!-- instagram -->
+                <a
+                  href="#"
+                  class="p-4 px-[18px] justify-center items-center rounded-full border border-cyan-950 hover:bg-gradient-to-tr hover:from-[#FCB045] hover:via-[#FD1D1D] hover:to-[#833AB4] hover:transition-colors hover:duration-700"
+                >
+                  <i
+                    class="fa-brands fa-instagram flex text-[24px] text-white"
+                  ></i>
+                </a>
+                <!-- dribble -->
+                <a
+                  href="#"
+                  class="p-4 px-[18px] justify-center items-center rounded-full border border-cyan-950 hover:bg-pink-500 hover:transition-colors hover:duration-700"
+                >
+                  <i
+                    class="fa-solid fa-basketball flex text-[24px] text-white"
+                  ></i>
+                </a>
+                <!-- youtube -->
+                <a
+                  href="#"
+                  class="p-4 justify-center items-center rounded-full border border-cyan-950 hover:bg-red-600 hover:transition-colors hover:duration-700"
+                >
+                  <i
+                    class="fa-brands fa-youtube flex text-[24px] text-white"
+                  ></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- page link container -->
+            <div
+              class="flex justify-start lg:justify-end items-start content-start gap-2 flex-2 self-stretch flex-wrap"
+            >
+              <a
+                href="#hero"
+                class="flex py-2 px-4 justify-center items-center gap-1 rounded-full bg-black shadow-3xl text-text-muted font-First font-bold not-italic leading-normal text-[14px] hover:text-white hover:transition-colors hover:duration-700"
+                >Home</a
+              >
+              <a
+                href="#hero"
+                class="flex py-2 px-4 justify-center items-center gap-1 rounded-full bg-black shadow-3xl text-text-muted font-First font-bold not-italic leading-normal text-[14px] hover:text-white hover:transition-colors hover:duration-700"
+                >Services</a
+              >
+              <a
+                href="#hero"
+                class="flex py-2 px-4 justify-center items-center gap-1 rounded-full bg-black shadow-3xl text-text-muted font-First font-bold not-italic leading-normal text-[14px] hover:text-white hover:transition-colors hover:duration-700"
+                >Projects</a
+              >
+              <a
+                href="#hero"
+                class="flex py-2 px-4 justify-center items-center gap-1 rounded-full bg-black shadow-3xl text-text-muted font-First font-bold not-italic leading-normal text-[14px] hover:text-white hover:transition-colors hover:duration-700"
+                >Work Process</a
+              >
+              <a
+                href="#hero"
+                class="flex py-2 px-4 justify-center items-center gap-1 rounded-full bg-black shadow-3xl text-text-muted font-First font-bold not-italic leading-normal text-[14px] hover:text-white hover:transition-colors hover:duration-700"
+                >About</a
+              >
+              <a
+                href="#hero"
+                class="flex py-2 px-4 justify-center items-center gap-1 rounded-full bg-black shadow-3xl text-text-muted font-First font-bold not-italic leading-normal text-[14px] hover:text-white hover:transition-colors hover:duration-700"
+                >Blog</a
+              >
+              <a
+                href="#hero"
+                class="flex py-2 px-4 justify-center items-center gap-1 rounded-full bg-black shadow-3xl text-text-muted font-First font-bold not-italic leading-normal text-[14px] hover:text-white hover:transition-colors hover:duration-700"
+                >Career</a
+              >
+              <a
+                href="#hero"
+                class="flex py-2 px-4 justify-center items-center gap-1 rounded-full bg-black shadow-3xl text-text-muted font-First font-bold not-italic leading-normal text-[14px] hover:text-white hover:transition-colors hover:duration-700"
+                >Teams</a
+              >
+              <a
+                href="#hero"
+                class="flex py-2 px-4 justify-center items-center gap-1 rounded-full bg-black shadow-3xl text-text-muted font-First font-bold not-italic leading-normal text-[14px] hover:text-white hover:transition-colors hover:duration-700"
+                >Contact Us</a
+              >
+            </div>
+
+            <!-- download button for mobile but hidden for others -->
+            <!-- download button -->
+            <a
+              href="https://www.fnfbyte.com"
+              target="_blank"
+              class="flex md:hidden py-3 px-4 items-center gap-1 rounded-full bg-surface-brand hover:bg-surface-brand-hover transition duration-700"
+            >
+              <span class="material-symbols-outlined text-[24px] text-white">
+                download
+              </span>
+              <span class="body_base !font-bold !text-white">Company Deck</span>
+            </a>
+          </div>
+
+          <!-- more info footer-->
+          <div class="flex flex-col items-start self-stretch">
+            <!-- services  -->
+            <div
+              class="flex flex-col py-4 gap-6 items-center self-stretch border-t border-b border-border-primary cursor-pointer"
+            >
+              <!-- heading text-->
+              <div class="flex items-center justify-between w-full">
+                <h3
+                  class="sub_title_sm self-stretch items-center justify-center flex"
+                >
+                  Show All Services
+                </h3>
+                <span
+                  class="material-symbols-outlined text-white text-[20px] flex p-2 rounded-full bg-surface-primary"
+                >
+                  keyboard_arrow_up
+                </span>
+              </div>
+              <!-- services container -->
+              <div class="flex flex-col items-start gap-6 flex-2 w-full">
+                <!-- design -->
+                <div class="flex flex-col items-start gap-4 self-stretch">
+                  <h3 class="body_base_medium !text-surface-brand self-stretch">
+                    DESIGN
+                  </h3>
+                  <!-- 1st line -->
+                  <div
+                    class="flex flex-col sm:flex-row items-start gap-2 self-stretch"
+                  >
+                    <!-- 1 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      UI/UX Design
+                    </a>
+                    <!-- 2 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      UX Audit
+                    </a>
+                    <!-- 3 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Web Design
+                    </a>
+                    <!-- 4 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Mobile App Design
+                    </a>
+                  </div>
+                  <!-- 2nd line -->
+                  <div
+                    class="flex flex-col sm:flex-row items-start gap-2 self-stretch"
+                  >
+                    <!-- 1 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Branding
+                    </a>
+                    <!-- 2 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Landing Page Design
+                    </a>
+                    <!-- 3 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Saas Web Design
+                    </a>
+                    <!-- 4 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Responsive Web Design
+                    </a>
+                  </div>
+                  <!-- 3rd line -->
+                  <div
+                    class="flex flex-col sm:flex-row items-start gap-2 self-stretch"
+                  >
+                    <!-- 1 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Rebranding
+                    </a>
+                  </div>
+                </div>
+
+                <!-- development -->
+                <div class="flex flex-col items-start gap-4 self-stretch">
+                  <h3 class="body_base_medium !text-surface-brand self-stretch">
+                    DEVELOPMENT
+                  </h3>
+                  <!-- 1st line -->
+                  <div
+                    class="flex flex-col sm:flex-row items-start gap-2 self-stretch"
+                  >
+                    <!-- 1 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Web Development
+                    </a>
+                    <!-- 2 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Front-end Development
+                    </a>
+                    <!-- 3 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Back-end development
+                    </a>
+                    <!-- 4 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      CMS Development
+                    </a>
+                  </div>
+                  <!-- 2nd line -->
+                  <div
+                    class="flex flex-col sm:flex-row items-start gap-2 self-stretch"
+                  >
+                    <!-- 1 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Mobile app development
+                    </a>
+                    <!-- 2 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      MVP development
+                    </a>
+                    <!-- 3 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Wordpress
+                    </a>
+                    <!-- 4 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Shopify
+                    </a>
+                  </div>
+                  <!-- 3rd line -->
+                  <div
+                    class="flex flex-col sm:flex-row items-start self-stretch gap-2 md:max-w-[49.7%]"
+                  >
+                    <!-- 1 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      SQA(Quality Assurance)
+                    </a>
+                    <!-- 2 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Software Product Development
+                    </a>
+                  </div>
+                </div>
+
+                <!-- marketing -->
+                <div class="flex flex-col items-start gap-4 self-stretch">
+                  <h3 class="body_base_medium !text-surface-brand self-stretch">
+                    MARKETING
+                  </h3>
+                  <!-- 1st line -->
+                  <div
+                    class="flex flex-col sm:flex-row items-start gap-2 self-stretch"
+                  >
+                    <!-- 1 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Content Marketing
+                    </a>
+                    <!-- 2 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Email Marketing
+                    </a>
+                    <!-- 3 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Social Media Marketing
+                    </a>
+                    <!-- 4 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Marketing Design Support
+                    </a>
+                  </div>
+
+                  <!-- 2nd line -->
+                  <div
+                    class="flex flex-col sm:flex-row items-start self-stretch gap-2 md:max-w-[49.7%]"
+                  >
+                    <!-- 1 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Social Media Design
+                    </a>
+                    <!-- 2 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      SEO
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- technologies  -->
+            <div
+              class="flex flex-col py-4 gap-6 items-center self-stretch border-t border-b border-border-primary cursor-pointer"
+            >
+              <!-- heading text-->
+              <div class="flex items-center justify-between w-full">
+                <h3
+                  class="sub_title_sm self-stretch items-center justify-center flex"
+                >
+                  Show All Technologies
+                </h3>
+                <span
+                  class="material-symbols-outlined text-white text-[20px] flex p-2 rounded-full bg-surface-primary"
+                >
+                  keyboard_arrow_up
+                </span>
+              </div>
+              <!-- technologies container -->
+              <div class="flex flex-col items-start gap-6 flex-2 w-full">
+                <!-- backend and front end -->
+                <div class="flex flex-col items-start gap-4 self-stretch">
+                  <h3 class="body_base_medium !text-surface-brand self-stretch">
+                    BACK-END/FRONT-END
+                  </h3>
+                  <!-- 1st line -->
+                  <div
+                    class="flex flex-col sm:flex-row items-start gap-2 self-stretch"
+                  >
+                    <!-- 1 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      HTML/CSS/JS
+                    </a>
+                    <!-- 2 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      React Js
+                    </a>
+                    <!-- 3 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Next Js
+                    </a>
+                    <!-- 4 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Node JS(Express Js)
+                    </a>
+                  </div>
+                  <!-- 2nd line -->
+                  <div
+                    class="flex flex-col sm:flex-row items-start self-stretch gap-2 md:max-w-[49.7%]"
+                  >
+                    <!-- 1 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Php(Laravel)
+                    </a>
+                    <!-- 2 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Python(Django)
+                    </a>
+                  </div>
+                </div>
+
+                <!-- mobile app -->
+                <div
+                  class="flex flex-col items-start gap-4 self-stretch md:max-w-[75%]"
+                >
+                  <h3 class="body_base_medium !text-surface-brand self-stretch">
+                    MOBILE APP
+                  </h3>
+                  <!-- 1st line -->
+                  <div
+                    class="flex flex-col sm:flex-row items-start gap-2 self-stretch"
+                  >
+                    <!-- 1 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Flutter
+                    </a>
+                    <!-- 2 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Java
+                    </a>
+                    <!-- 3 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Next Js
+                    </a>
+                  </div>
+                </div>
+
+                <!-- cms -->
+                <div class="flex flex-col items-start gap-4 self-stretch">
+                  <h3 class="body_base_medium !text-surface-brand self-stretch">
+                    CMS
+                  </h3>
+                  <!-- 1st line -->
+                  <div
+                    class="flex flex-col sm:flex-row items-start gap-2 self-stretch"
+                  >
+                    <!-- 1 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Wordpress
+                    </a>
+                    <!-- 2 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Shopify
+                    </a>
+                    <!-- 3 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Webflow
+                    </a>
+                    <!-- 4 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Square Space
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- industries  -->
+            <div
+              class="flex flex-col py-4 gap-6 items-center self-stretch border-t border-b border-border-primary cursor-pointer"
+            >
+              <!-- heading text-->
+              <div class="flex items-center justify-between w-full">
+                <h3
+                  class="sub_title_sm self-stretch items-center justify-center flex"
+                >
+                  Show All Industries
+                </h3>
+                <span
+                  class="material-symbols-outlined text-white text-[20px] flex p-2 rounded-full bg-surface-primary"
+                >
+                  keyboard_arrow_up
+                </span>
+              </div>
+              <!-- industries container -->
+              <div class="flex flex-col items-start gap-6 flex-2 w-full">
+                <!-- backend and front end -->
+                <div class="flex flex-col items-start gap-4 self-stretch">
+                  <h3 class="body_base_medium !text-surface-brand self-stretch">
+                    HEALTHCARE
+                  </h3>
+                  <!-- 1st line -->
+                  <div
+                    class="flex flex-col sm:flex-row items-start gap-2 self-stretch"
+                  >
+                    <!-- 1 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Healthcare UI/UX design
+                    </a>
+                    <!-- 2 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Healthcare website design
+                    </a>
+                    <!-- 3 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Healthcare software testing
+                    </a>
+                    <!-- 4 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Medical apps for patients
+                    </a>
+                  </div>
+                  <!-- 2nd line -->
+                  <div
+                    class="flex flex-col sm:flex-row items-start self-stretch gap-2 md:max-w-[49.7%]"
+                  >
+                    <!-- 1 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Healthcare IT consulting
+                    </a>
+                    <!-- 2 -->
+                    <a
+                      href="#"
+                      class="flex flex-col items-start flex-2 shadow-3xl base_medium hover:text-white hover:transition-colors hover:duration-1000"
+                    >
+                      Healthcare software development
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- bottom part of footer -->
+          <div
+            class="flex flex-col md:flex-row justify-between items-center self-stretch"
+          >
+            <div class="body_base flex-2">
+              © 2025 FnFByte - All Right Reserved
+            </div>
+            <!-- links -->
+            <div class="flex items-center gap-4">
+              <a href="#" class="body_base">Manage Cookies</a>
+              <a href="#" class="body_base">Terms & Conditions</a>
+              <a href="#" class="body_base">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <!---------------------------------------------------------------------------- Swiper JS -------------------------------------------------------------------------->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!---------------------------------------------------------------------------- flowbite JS -------------------------------------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 
     <!---------------------------------------------------------------------------- Main JS ----------------------------------------------------------------------------->
     <script type="module" src="/src/main.js"></script>

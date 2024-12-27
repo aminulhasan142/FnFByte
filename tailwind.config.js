@@ -60,6 +60,9 @@ export default {
           },
         },
       },
+      screens: {
+        "3xl": "1744px",
+      },
     },
   },
   plugins: [],
