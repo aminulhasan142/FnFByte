@@ -44,6 +44,9 @@ export default {
       animation: {
         blob: "blob 7s infinite",
       },
+      animation: {
+        "spin-slow": "spin 5s linear infinite",
+      },
       keyframes: {
         blob: {
           "0%": {
@@ -57,6 +60,20 @@ export default {
           },
           "100%": {
             transform: "translate(0px, 0px) scale(1)",
+          },
+        },
+        sticker: {
+          "0%": {
+            transform: "rotate(0deg) scale(1)",
+          },
+          "33%": {
+            transform: "rotate(80deg) scale(1.5)",
+          },
+          "66%": {
+            transform: "rotate(120deg) scale(1.5)",
+          },
+          "100%": {
+            transform: "rotate(180deg) scale(1)",
           },
         },
       },
